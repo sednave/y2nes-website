@@ -94,7 +94,7 @@ body {
   align-items: center;
 }
 
-#y2nes-social-links:hover
+#y2nes-social-links:hover,
 #y2nes-social-links:focus-within {
   background-size: 102vw;
   transition: background-size 0.5s;
@@ -114,7 +114,7 @@ body {
   align-items: center;
 }
 
-#y2nes-music-links:hover
+#y2nes-music-links:hover,
 #y2nes-music-links:focus-within {
   background-size: 87vw;
   transition: background-size 0.5s;
@@ -149,7 +149,7 @@ body {
   transition: background-color 0.2s;
 }
 
-.links-container a:hover
+.links-container a:hover,
 .links-container a:focus {
   background-color: #62cca7;
   cursor: pointer;

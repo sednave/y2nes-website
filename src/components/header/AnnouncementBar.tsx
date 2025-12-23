@@ -2,7 +2,7 @@ import Logo from '../Logo.tsx';
 
 const AnnouncementBar = () => {
     return <div className="announcement-bar">
-        <Logo></Logo>
+        <Logo />
         <div className="announcement-bar-links">
             <a href="/home">Home</a>
             <a href="/characters">Characters & References</a>
