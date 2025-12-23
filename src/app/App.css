@@ -24,7 +24,7 @@ a:hover {
   justify-content: flex-start;
   align-items: stretch;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 header {
@@ -52,28 +52,31 @@ header {
   gap: 3rem;
 }
 
+.logo {
+  height:100%;
+}
+
 main {
-  width: 100vw;
+  width: 100%;
   flex-grow: 1;
 }
 
 .marquee {
   color: white;
   font-size: 1.5rem;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .marquee p {
   margin: 0;
-}
-
-.marquee p {
   padding-left: 2rem;
 }
 
 body {
   background-color: black;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  max-width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -82,7 +85,7 @@ body {
   width: 100%;
   background:
     linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.0) 25%, rgba(0,0,0,0.0) 50%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 100%),
-    url('src/assets/y2nes_banner.png') no-repeat;
+    url('../assets/y2nes_banner.png') no-repeat;
   background-size: 100vw;
   background-position: -10vw 0%;
   transition: background-size 0.5s;
@@ -91,7 +94,8 @@ body {
   align-items: center;
 }
 
-#y2nes-social-links:hover {
+#y2nes-social-links:hover
+#y2nes-social-links:focus-within {
   background-size: 102vw;
   transition: background-size 0.5s;
 }
@@ -100,7 +104,7 @@ body {
   width: 100%;
   background:
     linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,0.0) 75%, rgba(0,0,0,0.0) 90%, rgba(0,0,0,1) 100%),
-    url('src/assets/max_power_banner.png') no-repeat;
+    url('../assets/max_power_banner.png') no-repeat;
   background-size: 85vw;
   background-position: 100% 45%;
   transition: background-size 0.5s;
@@ -110,7 +114,8 @@ body {
   align-items: center;
 }
 
-#y2nes-music-links:hover {
+#y2nes-music-links:hover
+#y2nes-music-links:focus-within {
   background-size: 87vw;
   transition: background-size 0.5s;
 }
@@ -144,7 +149,8 @@ body {
   transition: background-color 0.2s;
 }
 
-.links-container a:hover {
+.links-container a:hover
+.links-container a:focus {
   background-color: #62cca7;
   cursor: pointer;
   transition: background-color 0.2s;
