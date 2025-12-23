@@ -1,12 +1,13 @@
 import Logo from '../Logo';
+import { Link } from 'react-router-dom';
 
 const AnnouncementBar = () => {
     return <div className="announcement-bar">
         <Logo />
         <div className="announcement-bar-links">
-            <a href="/home">Home</a>
-            <a href="/characters">Characters & References</a>
-            <a href="/store">Store</a>
+            <Link to="/home">Home</Link>
+            <Link to="/characters">Characters & References</Link>
+            <Link to="/store">Store</Link>
         </div>
     </div>
 }
