@@ -1,0 +1,191 @@
+:root {
+  --primary-color: aquamarine;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+a:visited {
+  color:rgb(127, 208, 255);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#homepage {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+header {
+  z-index: 10;
+}
+
+
+.announcement-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4vh;
+  padding: 4vh 4vw;
+  margin: 0;
+}
+
+.announcement-bar img {
+  max-height: 100%;
+}
+
+.announcement-bar-links {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+main {
+  width: 100vw;
+  flex-grow: 1;
+}
+
+.marquee {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.marquee p {
+  margin: 0;
+}
+
+.marquee p {
+  padding-left: 2rem;
+}
+
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+#y2nes-social-links {
+  width: 100%;
+  background:
+    linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.0) 25%, rgba(0,0,0,0.0) 50%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 100%),
+    url('src/assets/y2nes_banner.png') no-repeat;
+  background-size: 100vw;
+  background-position: -10vw 0%;
+  transition: background-size 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#y2nes-social-links:hover {
+  background-size: 102vw;
+  transition: background-size 0.5s;
+}
+
+#y2nes-music-links {
+  width: 100%;
+  background:
+    linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,0.0) 75%, rgba(0,0,0,0.0) 90%, rgba(0,0,0,1) 100%),
+    url('src/assets/max_power_banner.png') no-repeat;
+  background-size: 85vw;
+  background-position: 100% 45%;
+  transition: background-size 0.5s;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#y2nes-music-links:hover {
+  background-size: 87vw;
+  transition: background-size 0.5s;
+}
+
+.links-container {
+  width: min-content;
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: 30em 40em 30em;
+  text-align: center;
+  padding: 6em;
+}
+
+.links-container strong {
+  font-size: 4rem;
+  color: white;
+  font-weight: 700;
+  text-shadow:
+    0 0 10px aquamarine,
+    0 0 60px aquamarine;
+}
+
+.links-container a {
+  color:black;
+  background-color: aquamarine;
+  font-size: 1.2rem;
+  border: 0;
+  border-radius: 100rem;
+  padding: 0.25em 1em;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.links-container a:hover {
+  background-color: #62cca7;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#y2nes-social-links strong, #y2nes-social-links a{
+  grid-column: 3;
+}
+
+#y2nes-music-links strong, #y2nes-music-links a{
+  grid-column: 1;
+}
+
+footer {
+  color: white;
+  padding:5em;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 50%;
+  padding-left: 20%;
+
+  font-size: 1.2rem;
+}
+
+footer h2 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+footer div {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  grid-column: 3;
+}
+
+footer div h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+}
