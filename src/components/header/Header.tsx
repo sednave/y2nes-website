@@ -1,4 +1,4 @@
-import AnnouncementBar from './AnnouncementBar.tsx';
+import AnnouncementBar from './AnnouncementBar';
 
 const Header = () => {
     return <header>

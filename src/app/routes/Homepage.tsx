@@ -1,5 +1,5 @@
-import Footer from "../../components/Footer.tsx";
-import Header from "../../components/header/Header.tsx";
+import Footer from "../../components/Footer";
+import Header from "../../components/header/Header";
 import Marquee from "react-fast-marquee";
 
 const Homepage = () => {
