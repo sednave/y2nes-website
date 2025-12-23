@@ -2,7 +2,7 @@ import AnnouncementBar from './AnnouncementBar';
 
 const Header = () => {
     return <header>
-        <AnnouncementBar></AnnouncementBar>
+        <AnnouncementBar />
     </header>
 }
 
