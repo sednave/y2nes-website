@@ -195,3 +195,28 @@ footer div h3 {
   margin: 0;
   font-size: 2rem;
 }
+
+#not-found-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+#not-found-page main {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+#not-found-page-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#not-found-page h1 {
+  font-size: 8rem;
+}
+
+#not-found-page p {
+  font-size: 2rem;
+}

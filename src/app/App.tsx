@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css'
 import Homepage from './routes/Homepage';
+import NotFoundPage from './routes/NotFoundPage';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/characters" element={<Homepage />} /> {/* TODO Add Characters Page */}
         <Route path="/about" element={<Homepage />} /> {/* TODO Add About Page */ }
         <Route path="/store" element={<Homepage />} /> {/* TODO Add Store Page */ }
+        <Route path="*" element={<NotFoundPage />} /> {/* TODO Add 404 Page */}
       </Routes>
     </BrowserRouter>
   )
