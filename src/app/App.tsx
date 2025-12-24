@@ -12,7 +12,7 @@ function App() {
         <Route path="/characters" element={<Homepage />} /> {/* TODO Add Characters Page */}
         <Route path="/about" element={<Homepage />} /> {/* TODO Add About Page */ }
         <Route path="/store" element={<Homepage />} /> {/* TODO Add Store Page */ }
-        <Route path="*" element={<NotFoundPage />} /> {/* TODO Add 404 Page */}
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   )
