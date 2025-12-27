@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import MusicListing from "./MusicListing"
-import MusicListingButton from "../app/routes/Music/MusicListingButton"
+import MusicListingButton from "./MusicListingButton"
 
 type Props = {
     listingType: string

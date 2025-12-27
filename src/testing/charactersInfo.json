@@ -22,5 +22,13 @@
         "icon": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/5076c8de-791f-48d9-8c88-1025d185e240/0990dbaa-8c9e-4244-813d-f0fffc551bb2.webp@webp",
         "portrait": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/5076c8de-791f-48d9-8c88-1025d185e240/0990dbaa-8c9e-4244-813d-f0fffc551bb2.webp@webp",
         "backgroundColor": "#0c4383"
+    },
+    {
+        "id": 3,
+        "name": "Alisa",
+        "description": "Originally a regular girl from Earth, but died and was reincarnated as a demon. As a demon, she is now bound to another novice adventurer to do their bidding. Of her adventurer group, she's the best fighter. Wields a gunblade.\nCan see the future through her \"third eye,\" which usually floats next to her.\nGenerally a quiet girl and not talkative, but otherwise energetic in other ways.\nHas a sugar and coffee addiction. She will go beast mode when they are consumed.",
+        "icon": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/9142c7e4-fcb1-4d27-b341-f0b7f8094fca/6dde5521-0a25-4de7-90ac-94474a7b4927.webp@webp",
+        "portrait": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/9142c7e4-fcb1-4d27-b341-f0b7f8094fca/33a7faa0-3589-4c4a-8b9d-0e8d9f0a8b7d.webp@webp",
+        "backgroundColor": "#aa220c"
     }
 ]

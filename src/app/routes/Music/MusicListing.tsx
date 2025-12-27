@@ -23,8 +23,14 @@ const MusicListing = ({listingId, style}: Props) => {
     switch (listingId) {
         case "ANTI-CULTURED":
             inner = <>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/o7Er2Xo82aU?si=sQSKERLiqmjSqyNj" title="ANTI-CULTURED Teaser" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen
+                style={{float: "left", marginRight: "2em"}}
+                ></iframe>
                 <h2>ANTI-CULTURED</h2>
-                <p>COMING SOON!</p>
+                <p>The rich and powerful are stealing magic from the world, and many people are simply giving up, seeing no hope in the future. This is what society has become.</p>
+                <p>Y2NES is pushing back. If that's what culture is, then the fix is to be anti-cultured. Young and old, everyone has the chance to fight back.</p>
+                <p>"ANTI-CULTURED" is an album with sounds inspired from late 90s-early 2000s video games like Jet Set Radio and Sonic Rush. Expect funky bass lines and hard breakbeats to give you the energy to fight against an unjust system.</p>
+                <strong>COMING SOON!</strong>
             </>
             break;
         case "Break! The Scarlet Devil!":

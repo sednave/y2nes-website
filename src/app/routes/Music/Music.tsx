@@ -2,7 +2,7 @@ import { useState } from "react"
 import Footer from "../../../components/Footer"
 import Header from "../../../components/header/Header"
 import './Music.css'
-import MusicListings from "../../../components/MusicListings"
+import MusicListings from "./MusicListings"
 
 const Music = () => {
     const [songType, setSongType] = useState('');

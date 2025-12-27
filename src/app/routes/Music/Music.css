@@ -1,5 +1,5 @@
 .bandcamp-player {
-    border-radius: 2em;
+    border-radius: 1em;
     border: none;
     height: 20rem;
     width: 20rem;
@@ -10,13 +10,13 @@
 
 #song-categories {
     display: grid;
-    grid-template-columns: "1fr 1fr 1fr";
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2em;
 }
 
 .song-category-button {
     border: none;
-    border-radius: none;
+    border-radius: 1rem;
     height: 20rem;
     width: 20rem;
     color: white;
@@ -30,6 +30,7 @@
 
 .music-item-listing {
     border: none;
+    border-radius: 1rem;
     width: 25rem;
     height: 25rem;
     background-size: cover;
@@ -45,7 +46,7 @@
 
 .music-listings-wrapper {
     display: grid;
-    grid-template-columns: "1fr 1fr 1fr 1fr 1fr";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 2rem;
     margin: auto;
     max-width: fit-content;
