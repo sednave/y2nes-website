@@ -13,7 +13,6 @@ const CharacterInfoSection = ({characterId}: Props) => {
     const characterInfo = useCharacterInfo(characterId);
 
     useEffect(() => {
-        console.log(contentRef.current)
         if (!contentRef.current) {
             return;
         }
@@ -21,11 +20,11 @@ const CharacterInfoSection = ({characterId}: Props) => {
         setHeight(characterInfo ? contentRef.current.scrollHeight : 0);
     }, [characterInfo])
 
-    const backgroundColor = characterInfo ? characterInfo.backgroundColor : "clear"
+    const backgroundColor = characterInfo ? characterInfo.backgroundColor : "transparent"
     return (
         <section id="character-info-section" style={{height: height, backgroundColor: backgroundColor}}>
             <div id="character-info-wrapper" ref={contentRef}>
-                {characterInfo && <img className="character-info-portrait" src={`${characterInfo.portrait}`} />}
+                {characterInfo && <img className="character-info-portrait" src={`${characterInfo.portrait}`} alt={`Portrait of ${characterInfo.name}`}/>}
                 {characterInfo && <h2>{characterInfo.name}</h2>}
                 {characterInfo && <RichParagraph text={characterInfo.description} />}
             </div>
