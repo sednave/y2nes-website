@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useLayoutEffect, useRef, useState } from 'react'
 import useCharacterInfo from '../hooks/useCharacterInfo'
 import RichParagraph from './RichParagraph'
 
@@ -12,7 +12,7 @@ const CharacterInfoSection = ({characterId}: Props) => {
 
     const characterInfo = useCharacterInfo(characterId);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (!contentRef.current) {
             return;
         }
@@ -24,9 +24,13 @@ const CharacterInfoSection = ({characterId}: Props) => {
     return (
         <section id="character-info-section" style={{height: height, backgroundColor: backgroundColor}}>
             <div id="character-info-wrapper" ref={contentRef}>
-                {characterInfo && <img className="character-info-portrait" src={`${characterInfo.portrait}`} alt={`Portrait of ${characterInfo.name}`}/>}
-                {characterInfo && <h2>{characterInfo.name}</h2>}
-                {characterInfo && <RichParagraph text={characterInfo.description} />}
+                {characterInfo && (
+                    <>
+                        <img className="character-info-portrait" src={`${characterInfo.portrait}`} alt={`Portrait of ${characterInfo.name}`} />
+                        <h2>{characterInfo.name}</h2>
+                        <RichParagraph text={characterInfo.description} />
+                    </>
+                )}
             </div>
         </section>
     )
