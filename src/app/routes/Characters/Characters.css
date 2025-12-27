@@ -1,0 +1,39 @@
+@import url("../../App.css");
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.character-icon-button {
+    border: none;
+    width: 200px;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.character-icon-button img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#character-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+#character-info-section {
+    width: 800px;
+}
+
+h2 {
+    text-shadow: none;
+    color: var(--primary-color);
+}
+p {
+    font-size: 1.2rem;
+}

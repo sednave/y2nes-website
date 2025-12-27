@@ -1,5 +1,21 @@
+/*#region Root*/
 :root {
   --primary-color: aquamarine;
+  --background-color: #111;
+}
+/*#endregion*/
+
+/*#region Base Styles*/
+body {
+  background-color: var(--background-color);
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 a {
@@ -7,16 +23,16 @@ a {
   text-decoration: underline;
 }
 
-a:visited {
-  color:rgb(127, 208, 255);
-}
-
 a:hover {
   text-decoration: none;
 }
 
-#homepage {
-  background-color: black;
+a:visited {
+  color:rgb(127, 208, 255);
+}
+
+.page {
+  background-color: var(--background-color);
   padding: 0;
   margin: 0;
   display: flex;
@@ -26,6 +42,36 @@ a:hover {
   min-height: 100vh;
   width: 100%;
 }
+/*#endregion*/
+
+/*#region Typography */
+h1 {
+  font-size: 4rem;
+  color: white;
+  font-weight: 700;
+  text-shadow:
+    0 0 10px aquamarine,
+    0 0 60px aquamarine;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 4rem;
+  color: white;
+  font-weight: 700;
+  text-shadow:
+    0 0 10px aquamarine,
+    0 0 60px aquamarine;
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+/*#endregion*/
 
 header {
   z-index: 10;
@@ -59,6 +105,9 @@ header {
 main {
   width: 100%;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .marquee {
@@ -71,101 +120,6 @@ main {
 .marquee p {
   margin: 0;
   padding-left: 2rem;
-}
-
-body {
-  background-color: black;
-  width: 100%;
-  max-width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-#y2nes-social-links {
-  width: 100%;
-  background:
-    linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.0) 25%, rgba(0,0,0,0.0) 50%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 100%),
-    url('../assets/y2nes_banner.png') no-repeat;
-  background-size: 100%;
-  background-position: -10vw 0%;
-  transition: background-size 0.5s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#y2nes-social-links:hover,
-#y2nes-social-links:focus-within {
-  background-size: 102%;
-  transition: background-size 0.5s;
-}
-
-#y2nes-music-links {
-  width: 100%;
-  background:
-    linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,0.0) 75%, rgba(0,0,0,0.0) 90%, rgba(0,0,0,1) 100%),
-    url('../assets/max_power_banner.png') no-repeat;
-  background-size: 85%;
-  background-position: 100% 45%;
-  transition: background-size 0.5s;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#y2nes-music-links:hover,
-#y2nes-music-links:focus-within {
-  background-size: 87%;
-  transition: background-size 0.5s;
-}
-
-.links-container {
-  width: min-content;
-  display: grid;
-  grid-gap: 0.5em;
-  grid-template-columns: 30em 40em 30em;
-  text-align: center;
-  padding: 6em;
-}
-
-.links-container strong {
-  font-size: 4rem;
-  color: white;
-  font-weight: 700;
-  text-shadow:
-    0 0 10px aquamarine,
-    0 0 60px aquamarine;
-}
-
-.link-button {
-  color:black;
-  background-color: aquamarine;
-  font-size: 1.2rem;
-  border: 0;
-  border-radius: 100rem;
-  padding: 0.25em 1em;
-  text-decoration: none;
-  transition: background-color 0.2s;
-}
-
-.link-button:visited {
-  color: black;
-}
-
-.link-button:hover,
-.link-button:focus {
-  background-color: #62cca7;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-#y2nes-social-links strong, #y2nes-social-links a{
-  grid-column: 3;
-}
-
-#y2nes-music-links strong, #y2nes-music-links a{
-  grid-column: 1;
 }
 
 footer {
@@ -181,6 +135,7 @@ footer {
 }
 
 footer h2 {
+  text-shadow: none;
   font-size: 3rem;
   margin: 0;
   padding: 0;
@@ -200,27 +155,65 @@ footer div h3 {
   font-size: 2rem;
 }
 
-#not-found-page {
+.join-the-newsletter-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-}
-#not-found-page main {
-  display: flex;
-  justify-content: center;
-  height: auto;
+  align-items: center;
 }
 
-#not-found-page-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-#not-found-page h1 {
-  font-size: 8rem;
-}
-
-#not-found-page p {
+.join-the-newsletter-section strong {
   font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.mailing-list-input-field {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  align-items: stretch;
+  gap: 1em;
+}
+
+.mailing-list-input-field input {
+  display: block;
+
+  font-size: 1.2rem;
+  background-color: var(--background-color);
+  color: white;
+  border: 2px solid rgba(1, 1, 1,1 0.75);
+  border-radius: 0.75em;
+  padding: 0.5em 1em;
+  margin: 0;
+  width: 20em;
+}
+
+.mailing-list-input-field button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 7em;
+  padding: 0.5em 2em;
+  margin: 0;
+  background-color: var(--primary-color);
+}
+
+.mailing-list-input-field button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 7em;
+  padding: 0.5em 2em;
+  margin: 0;
+  background-color: var(--primary-color);
+}
+
+.mailing-list-input-field button:hover {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 7em;
+  padding: 0.5em 2em;
+  margin: 0;
+  background-color: rgb(97, 196, 163);
 }

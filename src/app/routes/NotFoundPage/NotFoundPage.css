@@ -1,0 +1,19 @@
+
+main {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+#not-found-page-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+p {
+  font-size: 2rem;
+}
