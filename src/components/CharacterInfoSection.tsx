@@ -26,7 +26,7 @@ const CharacterInfoSection = ({characterId}: Props) => {
             <div id="character-info-wrapper" ref={contentRef}>
                 {characterInfo && (
                     <>
-                        <img className="character-info-portrait" src={`${characterInfo.portrait}`} alt={`Portrait of ${characterInfo.name}`} />
+                        <img className="character-info-portrait" src={characterInfo.portrait} alt={`Portrait of ${characterInfo.name}`} />
                         <h2>{characterInfo.name}</h2>
                         <RichParagraph text={characterInfo.description} />
                     </>
