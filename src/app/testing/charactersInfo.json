@@ -4,20 +4,23 @@
         "name": "Basil",
         "description": "One of the three most powerful adventurers in their city, alongside her best friends, Berry and Bagel.\nLikes fighting. Maybe a bit too much. But she can certainly back up her confidence.\nIs a mall ninja. She likes to pretend to that her ninja obsession is to connect with her ancestral roots, but it's really because she's a weeaboo.\nShould not remind you of any 90s cartoon characters.",
         "icon": "https://image-cdn.unvale.io/insecure/s:750::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/752de099-eb4e-4a1b-8ba0-63d92175371e/3dc2bfa8-d5f8-4133-88fe-6b410427181f.webp@webp",
-        "portrait": "https://image-cdn.unvale.io/insecure/s:750::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/752de099-eb4e-4a1b-8ba0-63d92175371e/3dc2bfa8-d5f8-4133-88fe-6b410427181f.webp@webp"
+        "portrait": "https://image-cdn.unvale.io/insecure/s:750::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/752de099-eb4e-4a1b-8ba0-63d92175371e/3dc2bfa8-d5f8-4133-88fe-6b410427181f.webp@webp",
+        "backgroundColor": "#1d6727"
     },
     {
         "id": 1,
         "name": "Berry",
         "description": "One of the three most powerful adventurers in their city, alongside her best friends, Bagel and Basil. Of the three, she's the most level-headed and the tactician of the group. At least, when she's not in active combat. Then she lets her inner demon out.\nReally into scientific research and how to make magic more accessible to more people.\nHopeless romantic. Her standards are too high to secure a date with any man, despite her complaining about being single.",
         "icon": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/05a7a34b-9272-4c06-8074-79fec2978f29/f40090d0-f230-45d3-9e5b-d5302834b8e5.webp@webp",
-        "portrait": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/05a7a34b-9272-4c06-8074-79fec2978f29/f40090d0-f230-45d3-9e5b-d5302834b8e5.webp@webp"
+        "portrait": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/05a7a34b-9272-4c06-8074-79fec2978f29/f40090d0-f230-45d3-9e5b-d5302834b8e5.webp@webp",
+        "backgroundColor": "#671d27"
     },
     {
         "id": 2,
         "name": "Bagel",
         "description": "One of the three most powerful adventurers in their city, alongside her best friends, Berry and Basil.\nBright and cheerful, sometimes to her own detriment. But everything usually works out in her favor.\nPopular with the girls, and VERY popular with the guys. As in, she's a menhera and forces a harem of guys to bully other boys into joining.",
         "icon": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/5076c8de-791f-48d9-8c88-1025d185e240/0990dbaa-8c9e-4244-813d-f0fffc551bb2.webp@webp",
-        "portrait": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/5076c8de-791f-48d9-8c88-1025d185e240/0990dbaa-8c9e-4244-813d-f0fffc551bb2.webp@webp"
+        "portrait": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/5076c8de-791f-48d9-8c88-1025d185e240/0990dbaa-8c9e-4244-813d-f0fffc551bb2.webp@webp",
+        "backgroundColor": "#0c4383"
     }
 ]

@@ -21,6 +21,7 @@ const Characters = () => {
     const characterPortraits = charactersInfo.map((characterInfo) => {
         return <CharacterIconButton key={characterInfo.id} characterId={characterInfo.id} onClick={() => onCharacterPortraitClicked(characterInfo.id)} />
     })
+    
     return <div className="page">
         <Header />
         <main id="characters">

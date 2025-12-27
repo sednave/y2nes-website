@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 const MailingListInputField = () => {
     const [email, setEmail] = useState('');
     const [error, setError] = useState('');
-    const handleInputChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
+    const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setEmail(event.target.value);
     }
-    const handleSubmit = (event: { preventDefault: () => void; }) => {
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         fetch('https://sendfox.com/form/mnpp8v/1yrnde',
                 {
