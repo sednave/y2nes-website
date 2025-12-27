@@ -1,10 +1,11 @@
 @import url("../../App.css");
 
-main {
+#characters {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
+
 .character-icon-button {
     border: none;
     width: 200px;
@@ -27,13 +28,21 @@ main {
 }
 
 #character-info-section {
-    width: 800px;
+    width: 100%;
+    padding: 3em 8em;
 }
 
-h2 {
+#character-info-wrapper {
+    width: 600px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#characters h2 {
     text-shadow: none;
     color: var(--primary-color);
 }
-p {
+
+#characters p {
     font-size: 1.2rem;
 }

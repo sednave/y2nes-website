@@ -181,7 +181,7 @@ footer div h3 {
   font-size: 1.2rem;
   background-color: var(--background-color);
   color: white;
-  border: 2px solid rgba(1, 1, 1,1 0.75);
+  border: 2px solid rgba(1, 1, 1, 1, 0.75);
   border-radius: 0.75em;
   padding: 0.5em 1em;
   margin: 0;
@@ -196,24 +196,10 @@ footer div h3 {
   padding: 0.5em 2em;
   margin: 0;
   background-color: var(--primary-color);
-}
-
-.mailing-list-input-field button {
-  font-size: 1.2rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 7em;
-  padding: 0.5em 2em;
-  margin: 0;
-  background-color: var(--primary-color);
+  transition: background-color 0.2s;
 }
 
 .mailing-list-input-field button:hover {
-  font-size: 1.2rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 7em;
-  padding: 0.5em 2em;
-  margin: 0;
   background-color: rgb(97, 196, 163);
+  transition: background-color 0.2s;
 }

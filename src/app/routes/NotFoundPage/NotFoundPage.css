@@ -1,5 +1,5 @@
 
-main {
+#not-found-page {
   display: flex;
   justify-content: center;
   height: auto;
@@ -10,10 +10,10 @@ main {
   flex-direction: column;
 }
 
-h1 {
+#not-found-page h1 {
   font-size: 8rem;
 }
 
-p {
+#not-found-page p {
   font-size: 2rem;
 }

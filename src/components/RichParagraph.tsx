@@ -5,12 +5,13 @@ type Props = {
 }
 
 const RichParagraph = ({ text }: Props) => {
+    const lines = text.split("\n");
     return <p>
         {
-            text.split("\n").map((line, index) => (
-                <React.Fragment key={index}>
+            lines.map((line, index) => (
+                <React.Fragment key={`${line}-${index}`}>
                     {line}
-                    <br />
+                    {index < lines.length - 1 && <br />}
                 </React.Fragment>
             ))
         }

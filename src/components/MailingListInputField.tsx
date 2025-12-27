@@ -19,7 +19,12 @@ const MailingListInputField = () => {
                     }),
                 }
         )
-        .then(res => res.json())
+        .then(res => {
+            if (!res.ok) {
+                throw new Error(`Subscription failed: ${res.statusText}`)
+            }
+            return res.json()
+        })
         .then(data => {
             console.log(data);
             setEmail("");
@@ -27,7 +32,7 @@ const MailingListInputField = () => {
         })
         .catch(err => {
             console.log(err);
-            setError("There was an error subscribing you to the email list");
+            setError(err.message || "There was an error subscribing you to the email list");
         })
     }
 
@@ -38,7 +43,7 @@ const MailingListInputField = () => {
             <form className="mailing-list-input-field" onSubmit={handleSubmit} data-async="true" data-recaptcha="true">
                 {error !== '' && <strong>{error}</strong>}
                 <label>
-                    <input name="mailing-list-input" type="email" value={email} onChange={handleInputChange} placeholder='Email address'/>
+                    <input name="mailing-list-input" type="email" value={email} onChange={handleInputChange} placeholder='Email address' required/>
                 </label>
                 <button type="submit">Subscribe</button>
             </form>

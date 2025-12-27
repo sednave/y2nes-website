@@ -5,7 +5,7 @@ import './NotFoundPage.css'
 const NotFoundPage = () => {
     return <div className="page">
         <Header />
-        <main>
+        <main id="not-found-page">
             <section id="not-found-page-wrapper">
                 <h1>Error 404: Not found</h1>
                 <p>You're trying to go somewhere that doesn't exist.</p>

@@ -5,6 +5,7 @@ import CharacterIconButton from "../../../components/CharacterIconButton";
 import { useState } from 'react';
 import charactersInfo from '../../testing/charactersInfo.json'
 import RichParagraph from "../../../components/RichParagraph";
+import CharacterInfoSection from "../../../components/CharacterInfoSection";
 
 const Characters = () => {
     const [characterId, setCharacterId] = useState(-1);
@@ -19,23 +20,16 @@ const Characters = () => {
     }
 
     const characterPortraits = charactersInfo.map((characterInfo) => {
-        return <CharacterIconButton characterId={characterInfo.id} onClick={() => onCharacterPortraitClicked(characterInfo.id)} />
+        return <CharacterIconButton key={characterInfo.id} characterId={characterInfo.id} onClick={() => onCharacterPortraitClicked(characterInfo.id)} />
     })
-
-    const characterInfo = charactersInfo[characterId]
-    const characterSection = characterInfo ? <section id="character-info-section">
-        <h2>{characterInfo.name}</h2>
-        <RichParagraph text={characterInfo.description} />
-    </section> : ''
-
     return <div className="page">
         <Header />
-        <main>
+        <main id="characters">
             <h1>MEET THE CHARACTERS</h1>
             <div id="character-icons">
                 {characterPortraits}
             </div>
-            {characterSection}
+            <CharacterInfoSection characterId={characterId} />
         </main>
         <Footer />
     </div>
