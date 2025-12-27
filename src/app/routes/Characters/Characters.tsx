@@ -1,10 +1,10 @@
 import Footer from "../../../components/Footer";
 import Header from "../../../components/header/Header";
 import './Characters.css'
-import CharacterIconButton from "../../../components/CharacterIconButton";
+import CharacterIconButton from "./CharacterIconButton";
 import { useState } from 'react';
-import charactersInfo from '../../testing/charactersInfo.json'
-import CharacterInfoSection from "../../../components/CharacterInfoSection";
+import charactersInfo from '../../../testing/charactersInfo.json'
+import CharacterInfoSection from "./CharacterInfoSection";
 
 const Characters = () => {
     const [characterId, setCharacterId] = useState(-1);

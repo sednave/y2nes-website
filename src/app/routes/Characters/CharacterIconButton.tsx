@@ -1,4 +1,4 @@
-import useCharacterInfo from "../hooks/useCharacterInfo"
+import useCharacterInfo from "../../../hooks/useCharacterInfo"
 
 type Props = {
     characterId: number

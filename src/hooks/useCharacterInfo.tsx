@@ -1,4 +1,4 @@
-import charactersInfo from '../app/testing/charactersInfo.json'
+import charactersInfo from '../testing/charactersInfo.json'
 import { useMemo } from 'react';
 
 const useCharacterInfo = (characterId: number) => {
