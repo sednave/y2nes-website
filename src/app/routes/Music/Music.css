@@ -8,6 +8,16 @@
     margin-bottom: 2em;
 }
 
+#music-page {
+    margin: 4vh auto;
+    background-color: var(--background-color);
+    box-shadow: 0 0 10px #fff, 0 0 50px var(--primary-color);
+    border-radius: 2rem;
+    padding: 4rem 4rem 0 4rem;
+    width: fit-content;
+    overflow: hidden;
+}
+
 #song-categories {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -22,10 +32,19 @@
     color: white;
     font-weight: bolder;
     font-size: 2rem;
-    text-shadow: 0 0 10px black,
-     0 0 20px black,
-      0 0 50px black;
-    background-size: cover;
+    text-shadow: 0 0 5px black,
+     0 0 10px black;
+    background-size: 100%;
+    background-color: black;
+    background-blend-mode: multiply;
+    background-position: center;
+    transition: background-size 0.2s;
+}
+
+
+.song-category-button:hover {
+    background-size: 110%;
+    transition: background-size 0.2s;
 }
 
 .music-item-listing {
@@ -33,20 +52,36 @@
     border-radius: 1rem;
     width: 25rem;
     height: 25rem;
-    background-size: cover;
     background-position: center;
-    font-size: 0rem;
+
+    background-size: 100%;
+    background-color: black;
+    background-blend-mode: multiply;
+    background-position: center;
+    transition: background-size 0.2s;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:transparent;
+}
+
+.music-item-listing:hover {
+    background-size: 110%;
+    transition: background-size 0.2s;
+    color:white;
+    text-shadow: 0 0 5px black,
+     0 0 10px black;
 }
 
 .music-listings {
-    background-color: var(--primary-color);
+    background: linear-gradient(to top, var(--primary-color) 0%, var(--background-color) 100%);
     width: 100%;
     padding: 4em;
 }
 
 .music-listings-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
     margin: auto;
     max-width: fit-content;
@@ -59,10 +94,7 @@
     overflow: hidden;
     grid-column: 1 / -1;
     background-color: var(--background-color);
-    margin: 4em auto;
+    margin: 0 auto;
     padding: 4em;
-}
-
-.music-listing h2 {
-    color: var(--primary-color);
+    border-radius: 1rem;
 }
