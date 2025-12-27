@@ -1,0 +1,121 @@
+@import url("../../App.css");
+
+h2 {
+    text-shadow: none;
+    color: var(--primary-color);
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+#news-section {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  padding-top: 12em;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4em;
+  background: linear-gradient(to right, var(--background-color) 0%, rgba(0,0,0,0.0) 25%, rgba(0,0,0,0.0) 50%, var(--background-color) 75%, var(--background-color) 100%), url('https://f4.bcbits.com/img/a2242049588_10.jpg') no-repeat;
+  background-size: 70%;
+  background-position: 0% 40%;
+  text-shadow:
+    0 0 10px var(--background-color),
+    0 0 60px var(--background-color);
+  transition: background-size 0.5s;
+}
+
+#news-section:hover,
+#news-section:focus-within {
+  background-size: 73%;
+  transition: background-size 0.5s;
+}
+
+#news-grid {
+  display: grid;
+  grid-template: 
+    "1fr 1fr";
+  gap: 8em;
+}
+
+#news-grid img {
+  grid-row: span 2;
+  width: 600px;
+}
+
+#y2nes-social-links {
+  width: 100%;
+  background:
+    linear-gradient(to right, var(--background-color) 0%, rgba(0,0,0,0.0) 25%, rgba(0,0,0,0.0) 50%, var(--background-color) 75%, var(--background-color) 100%),
+    url('../../../assets/y2nes_banner.png') no-repeat;
+  background-size: 100%;
+  background-position: -10vw 0%;
+  transition: background-size 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#y2nes-social-links:hover,
+#y2nes-social-links:focus-within {
+  background-size: 102%;
+  transition: background-size 0.5s;
+}
+
+#y2nes-music-links {
+  width: 100%;
+  background:
+    linear-gradient(to right, var(--background-color) 0%, var(--background-color) 25%, rgba(0,0,0,0.0) 75%, rgba(0,0,0,0.0) 90%, var(--background-color) 100%),
+    url('../../../assets/max_power_banner.png') no-repeat;
+  background-size: 85%;
+  background-position: 100% 45%;
+  transition: background-size 0.5s;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#y2nes-music-links:hover,
+#y2nes-music-links:focus-within {
+  background-size: 87%;
+  transition: background-size 0.5s;
+}
+
+.links-container {
+  width: min-content;
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: 30em 40em 30em;
+  text-align: center;
+  padding: 6em;
+}
+
+.link-button {
+  color: var(--background-color);
+  background-color: aquamarine;
+  font-size: 1.2rem;
+  border: 0;
+  border-radius: 100rem;
+  padding: 0.25em 1em;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.link-button:visited {
+  color: var(--background-color);
+}
+
+.link-button:hover,
+.link-button:focus {
+  background-color: #62cca7;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#y2nes-social-links h2, #y2nes-social-links a{
+  grid-column: 3;
+}
+
+#y2nes-music-links h2, #y2nes-music-links a{
+  grid-column: 1;
+}

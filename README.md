@@ -1,4 +1,7 @@
-# React + TypeScript + Vite
+# Y2NES Website
+
+The Y2NES website, featuring songs and artwork.
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -71,3 +74,5 @@ export default defineConfig([
   },
 ])
 ```
+
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/sednave/y2nes-website?utm_source=oss&utm_medium=github&utm_campaign=sednave%2Fy2nes-website&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
