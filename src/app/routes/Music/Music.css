@@ -1,0 +1,67 @@
+.bandcamp-player {
+    border-radius: 2em;
+    border: none;
+    height: 20rem;
+    width: 20rem;
+    float:left;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+#song-categories {
+    display: grid;
+    grid-template-columns: "1fr 1fr 1fr";
+    gap: 2em;
+}
+
+.song-category-button {
+    border: none;
+    border-radius: none;
+    height: 20rem;
+    width: 20rem;
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-shadow: 0 0 10px black,
+     0 0 20px black,
+      0 0 50px black;
+    background-size: cover;
+}
+
+.music-item-listing {
+    border: none;
+    width: 25rem;
+    height: 25rem;
+    background-size: cover;
+    background-position: center;
+    font-size: 0rem;
+}
+
+.music-listings {
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 4em;
+}
+
+.music-listings-wrapper {
+    display: grid;
+    grid-template-columns: "1fr 1fr 1fr 1fr 1fr";
+    gap: 2rem;
+    margin: auto;
+    max-width: fit-content;
+}
+
+.music-listing {
+    color: var(--primary-color);
+    width: 50vw;
+    transition: height 0.5s;
+    overflow: hidden;
+    grid-column: 1 / -1;
+    background-color: var(--background-color);
+    margin: 4em auto;
+    padding: 4em;
+}
+
+.music-listing h2 {
+    color: var(--primary-color);
+}

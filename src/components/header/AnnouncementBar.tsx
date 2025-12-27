@@ -8,6 +8,7 @@ const AnnouncementBar = () => {
             <Link to="/home">Home</Link>
             <Link to="/characters">Characters & References</Link>
             <Link to="/store">Store</Link>
+            <Link to="/music">Music</Link>
         </div>
     </div>
 }
