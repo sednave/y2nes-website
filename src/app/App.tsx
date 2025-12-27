@@ -4,6 +4,7 @@ import Homepage from './routes/Homepage/Homepage';
 import NotFoundPage from './routes/NotFoundPage/NotFoundPage';
 import Characters from './routes/Characters/Characters';
 import Store from './routes/Store/Store';
+import Music from './routes/Music/Music';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/home" element={<Homepage />} />
         <Route path="/characters" element={<Characters />} />
+        <Route path="/music" element={<Music />} />
         <Route path="/about" element={<Homepage />} /> {/* TODO Add About Page */ }
         <Route path="/store" element={<Store />} />
         <Route path="*" element={<NotFoundPage />} />
