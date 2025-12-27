@@ -95,7 +95,7 @@ const MusicListing = ({listingId, style}: Props) => {
             break;
         case "Test Track 1":
             inner = <>
-                <iframe title="Test Track 1" width="1230" height="692" src="https://www.youtube.com/embed/uQP803hSnO4" title="literally my first song ever" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <iframe title="Test Track 1" width="1230" height="692" src="https://www.youtube.com/embed/uQP803hSnO4" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 <h2>Test Track 1</h2>
                 <p>This is the first song I ever made. I think it didn't turn out that bad! Especially when compared with my second song, which isn't even ironically bad, it's just plain bad and will never see the light of day.</p>
             </>
