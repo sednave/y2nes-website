@@ -47,6 +47,7 @@ const MusicListingButton = ({listingId, onClick}:Props) => {
         className='music-item-listing' 
         style={{backgroundImage: `url('${backgroundImage}')`}}
         onClick={() => onClick(listingId)}
+        type="button"
     >
         {listingName}
     </button>

@@ -11,17 +11,17 @@ const Music = () => {
         <main id="music-page">
             <h1>Y-TUNES</h1>
             <div id="song-categories">
-                <button className="song-category-button" 
+                <button type="button" className="song-category-button" 
                     style={{backgroundImage: 'url(https://f4.bcbits.com/img/a2242049588_10.jpg)'}}
                     onClick={() => setSongType('albums')}>
                         Albums
                 </button>
-                <button className="song-category-button" 
+                <button type="button" className="song-category-button" 
                     style={{backgroundImage: 'url(https://f4.bcbits.com/img/a1426170319_10.jpg)'}}
                     onClick={() => setSongType('singles')}>
                         Singles
                 </button>
-                <button className="song-category-button" 
+                <button type="button" className="song-category-button" 
                     style={{backgroundImage: 'url(https://f4.bcbits.com/img/a3864170917_16.jpg)'}}
                     onClick={() => setSongType('extras')}>
                         Extras

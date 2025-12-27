@@ -10,7 +10,7 @@
 
 #song-categories {
     display: grid;
-    grid-template: "1fr 1fr 1fr";
+    grid-template-columns: "1fr 1fr 1fr";
     gap: 2em;
 }
 
@@ -45,7 +45,7 @@
 
 .music-listings-wrapper {
     display: grid;
-    grid-template: "1fr 1fr 1fr 1fr 1fr";
+    grid-template-columns: "1fr 1fr 1fr 1fr 1fr";
     gap: 2rem;
     margin: auto;
     max-width: fit-content;
@@ -63,5 +63,5 @@
 }
 
 .music-listing h2 {
-    color: var(--primary-color);;
+    color: var(--primary-color);
 }

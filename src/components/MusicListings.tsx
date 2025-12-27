@@ -7,12 +7,13 @@ type Props = {
 }
 
 const MusicListings = ({listingType}: Props) => {
-    const [listingId, setListingId] = useState('')
-    const [row, setRow] = useState(0)
+    const [listingId, setListingId] = useState('');
+    const [row, setRow] = useState(0);
+    const GRID_COLUMNS = 5;
 
     const handleMusicListingButtonClick = (listingId: string, index: number) => {
         setListingId(listingId)
-        setRow(Math.floor(index / 5) + 2);
+        setRow(Math.floor(index / GRID_COLUMNS) + 2);
     }
 
     useEffect(() => {
@@ -20,14 +21,13 @@ const MusicListings = ({listingType}: Props) => {
         setRow(0);
     }, [listingType])
 
-    console.log(row)
     let musicListings = <></>
     switch (listingType) {
         case 'albums':
             musicListings = <section className="music-listings">
                 <div className="music-listings-wrapper">
-                    <MusicListingButton listingId='ANTI-CULTURED' onClick={(listingId) => handleMusicListingButtonClick(listingId, 1)}/>
-                    <MusicListingButton listingId='Break! The Scarlet Devil!' onClick={(listingId) => handleMusicListingButtonClick(listingId, 2)}/>
+                    <MusicListingButton listingId='ANTI-CULTURED' onClick={(listingId) => handleMusicListingButtonClick(listingId, 0)}/>
+                    <MusicListingButton listingId='Break! The Scarlet Devil!' onClick={(listingId) => handleMusicListingButtonClick(listingId, 1)}/>
                     {listingId && <MusicListing listingId={listingId} style={{gridRow: row}}/>}
                 </div>
             </section>
