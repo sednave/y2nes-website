@@ -23,7 +23,7 @@ const MusicListing = ({listingId, style}: Props) => {
     switch (listingId) {
         case "ANTI-CULTURED":
             inner = <>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/o7Er2Xo82aU?si=sQSKERLiqmjSqyNj" title="ANTI-CULTURED Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/o7Er2Xo82aU?si=sQSKERLiqmjSqyNj" title="ANTI-CULTURED Teaser" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen
                 style={{float: "left", marginRight: "2em"}}
                 ></iframe>
                 <h2>ANTI-CULTURED</h2>

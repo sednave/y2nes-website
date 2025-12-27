@@ -3,7 +3,7 @@ import Header from "../../../components/header/Header";
 import './Characters.css'
 import CharacterIconButton from "./CharacterIconButton";
 import { useState } from 'react';
-import charactersInfo from '../../../testing/charactersInfo.json'
+import useCharacterInfos from "../../../hooks/useCharacterInfos";
 import CharacterInfoSection from "./CharacterInfoSection";
 
 const Characters = () => {
@@ -18,7 +18,7 @@ const Characters = () => {
         }
     }
 
-    const characterPortraits = charactersInfo.map((characterInfo) => {
+    const characterPortraits = useCharacterInfos().map((characterInfo) => {
         return <CharacterIconButton key={characterInfo.id} characterId={characterInfo.id} onClick={() => onCharacterPortraitClicked(characterInfo.id)} />
     })
     
