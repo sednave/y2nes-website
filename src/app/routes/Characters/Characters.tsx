@@ -4,7 +4,6 @@ import './Characters.css'
 import CharacterIconButton from "../../../components/CharacterIconButton";
 import { useState } from 'react';
 import charactersInfo from '../../testing/charactersInfo.json'
-import RichParagraph from "../../../components/RichParagraph";
 import CharacterInfoSection from "../../../components/CharacterInfoSection";
 
 const Characters = () => {

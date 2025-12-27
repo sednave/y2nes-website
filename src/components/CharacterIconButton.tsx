@@ -1,4 +1,4 @@
-import getCharacterInfo from "../hooks/getCharacterInfo"
+import useCharacterInfo from "../hooks/useCharacterInfo"
 
 type Props = {
     characterId: number
@@ -6,18 +6,16 @@ type Props = {
 }
 
 const CharacterIconButton = ({ characterId, onClick }: Props) => {
-    const characterInfo = getCharacterInfo(characterId)
+    const characterInfo = useCharacterInfo(characterId)
     if (!characterInfo) {
-        return <></>
+        return null
     }
-    else {
-        const imgUrl = characterInfo.icon;
-        return (
-            <button type="button" className="character-icon-button" onClick={onClick}>
-                <img src={imgUrl} alt={characterInfo.name} />
-            </button>
-        )
-    }
+    const imgUrl = characterInfo.icon;
+    return (
+        <button type="button" className="character-icon-button" onClick={onClick}>
+            <img src={imgUrl} alt={characterInfo.name} />
+        </button>
+    )
 }
 
 export default CharacterIconButton

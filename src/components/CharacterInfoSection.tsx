@@ -1,4 +1,4 @@
-import getCharacterInfo from '../hooks/getCharacterInfo'
+import useCharacterInfo from '../hooks/useCharacterInfo'
 import RichParagraph from './RichParagraph'
 
 type Props = {
@@ -6,13 +6,13 @@ type Props = {
 }
 
 const CharacterInfoSection = ({characterId}: Props) => {
-    const characterInfo = getCharacterInfo(characterId)
+    const characterInfo = useCharacterInfo(characterId)
     const characterSection = characterInfo ? <section id="character-info-section" className="scroll-reveal">
         <div id="character-info-wrapper">
             <h2>{characterInfo.name}</h2>
             <RichParagraph text={characterInfo.description} />
         </div>
-    </section> : ''
+    </section> : null
     return characterSection;
 }
 

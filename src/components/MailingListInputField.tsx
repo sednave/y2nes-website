@@ -40,7 +40,7 @@ const MailingListInputField = () => {
         <div className="join-the-newsletter-section">
             <strong>JOIN THE NEWSLETTER!</strong>
             <p>Subscribe to get notified of new drops and discounts</p>
-            <form className="mailing-list-input-field" onSubmit={handleSubmit} data-async="true" data-recaptcha="true">
+            <form className="mailing-list-input-field" onSubmit={handleSubmit}>
                 {error !== '' && <strong>{error}</strong>}
                 <label>
                     <input name="mailing-list-input" type="email" value={email} onChange={handleInputChange} placeholder='Email address' required/>
@@ -48,7 +48,6 @@ const MailingListInputField = () => {
                 <button type="submit">Subscribe</button>
             </form>
         </div>
-			
     )
 }
 
