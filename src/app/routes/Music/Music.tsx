@@ -9,7 +9,7 @@ import Marquee from "react-fast-marquee"
 const Music = () => {
     const [songType, setSongType] = useState('');
     const activeBackgroundColor = 'white';
-    const inactiveBackgroundColor = 'rgba(0, 0, 0, 0.5';
+    const inactiveBackgroundColor = 'rgba(0, 0, 0, 0.5)';
     return <div className="page">
         <SiteBackground />
         <Header />

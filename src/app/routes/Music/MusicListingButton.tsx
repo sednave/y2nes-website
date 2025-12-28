@@ -23,7 +23,7 @@ const MusicListingButton = ({listingId, selectedId, onClick}:Props) => {
 
     const backgroundImage = LISTING_IMAGES[listingId];
     const activeBackgroundColor = 'white';
-    const inactiveBackgroundColor = 'rgba(0, 0, 0, 0.5';
+    const inactiveBackgroundColor = 'rgba(0, 0, 0, 0.5)';
     const backgroundColor = selectedId === listingId ? activeBackgroundColor : inactiveBackgroundColor
     const listingName = listingId;
     return <button 
