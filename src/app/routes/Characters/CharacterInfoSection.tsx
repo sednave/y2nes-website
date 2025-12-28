@@ -25,13 +25,19 @@ const CharacterInfoSection = ({characterId}: Props) => {
     </>
 
     const backgroundColor = characterInfo ? characterInfo.backgroundColor : "transparent"
+    const glow = `0 0 10px ${backgroundColor}, 0 0 60px ${backgroundColor}`
     return (
-        <section id="character-info-section" style={{height: height, backgroundColor: backgroundColor}}>
+        <section id="character-info-section" style={{height: height}}>
             <div id="character-info-wrapper" ref={contentRef}>
                 {characterInfo && (
                     <>
-                        <img className="character-info-portrait" src={characterInfo.portrait} alt={`Portrait of ${characterInfo.name}`} />
-                        <h2>{characterInfo.name}</h2>
+                        <img 
+                            className="character-info-portrait" 
+                            src={characterInfo.portrait} 
+                            alt={`Portrait of ${characterInfo.name}`} 
+                            style={{boxShadow: glow}}
+                        />
+                        <h2 style={{textShadow: glow}}>{characterInfo.name}</h2>
                         <RichParagraph text={characterInfo.description} />
                         {referenceImage}
                     </>

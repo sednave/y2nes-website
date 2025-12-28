@@ -1,11 +1,18 @@
+import Marquee from "react-fast-marquee";
+import SiteBackground from "../../../components/backgrounds/SiteBackground";
 import Footer from "../../../components/Footer";
 import Header from "../../../components/header/Header";
 import MailingListInputField from "../../../components/MailingListInputField"
 import './Store.css'
 
 const Store = () => {
-    return <div id="store">
+    return <div id="store" className="page">
+        <SiteBackground />
         <Header />
+        <Marquee autoFill={true} className="marquee" gradient={true} gradientColor="black" direction="right" speed={50}>
+            <p>YOUTOPIA</p>
+            <p>·</p>
+        </Marquee>
         <main>
             <section id="store-wrapper">
                 <h1>STORE</h1>
@@ -17,6 +24,11 @@ const Store = () => {
                 <MailingListInputField />
             </section>
         </main>
+
+        <Marquee autoFill={true} className="marquee" gradient={true} gradientColor="black" direction="left" speed={50}>
+            <p>YOUTOPIA</p>
+            <p>·</p>
+        </Marquee>
         <Footer />
     </div>
 }
