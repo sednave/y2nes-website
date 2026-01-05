@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Footer from "../../../components/Footer";
-import Header from "../../../components/header/Header";
+import Footer from "../../components/Footer";
+import Header from "../../components/header/Header";
 import "./Music.css";
 import MusicListings from "./MusicListings";
-import SiteBackground from "../../../components/backgrounds/SiteBackground";
+import SiteBackground from "../../components/backgrounds/SiteBackground";
 import Marquee from "react-fast-marquee";
 
 const Music = () => {

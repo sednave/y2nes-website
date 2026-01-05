@@ -1,8 +1,8 @@
 import Marquee from "react-fast-marquee";
-import SiteBackground from "../../../components/backgrounds/SiteBackground";
-import Footer from "../../../components/Footer";
-import Header from "../../../components/header/Header";
-import MailingListInputField from "../../../components/MailingListInputField";
+import SiteBackground from "../../components/backgrounds/SiteBackground";
+import Footer from "../../components/Footer";
+import Header from "../../components/header/Header";
+import MailingListInputField from "../../components/MailingListInputField";
 import "./Store.css";
 
 const Store = () => {

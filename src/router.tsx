@@ -1,5 +1,5 @@
-import { createBrowserRouter, RouterProvider } from "react-router";
-import "./App.css";
+import { createBrowserRouter } from "react-router";
+
 import Homepage from "./routes/Homepage/Homepage";
 import NotFoundPage from "./routes/NotFoundPage/NotFoundPage";
 import Characters from "./routes/Characters/Characters";
@@ -38,8 +38,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-function App() {
-  return <RouterProvider router={router} />;
-}
-
-export default App;
+export default router;
