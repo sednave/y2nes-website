@@ -1,34 +1,34 @@
 [
-    {
-        "id": 0,
-        "name": "Basil",
-        "description": "One of the three most powerful adventurers in their city, alongside her best friends, Berry and Bagel.\nLikes fighting. Maybe a bit too much. But she can certainly back up her confidence.\nIs a mall ninja. She likes to pretend to that her ninja obsession is to connect with her ancestral roots, but it's really because she's a weeaboo.",
-        "icon": "https://image-cdn.unvale.io/insecure/s:750::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/752de099-eb4e-4a1b-8ba0-63d92175371e/3dc2bfa8-d5f8-4133-88fe-6b410427181f.webp@webp",
-        "portrait": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/752de099-eb4e-4a1b-8ba0-63d92175371e/879f4e60-5257-4174-b1e9-3a5f77907f07.webp@webp",
-        "backgroundColor": "#1d6727"
-    },
-    {
-        "id": 1,
-        "name": "Berry",
-        "description": "One of the three most powerful adventurers in their city, alongside her best friends, Bagel and Basil. Of the three, she's the most level-headed and the tactician of the group. At least, when she's not in active combat. Then she lets her inner demon out.\nReally into scientific research and how to make magic more accessible to more people.\nHopeless romantic. Her standards are too high to secure a date with any man, despite her complaining about being single.",
-        "icon": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/05a7a34b-9272-4c06-8074-79fec2978f29/b7766930-431d-49a8-a4c2-922387b94329.webp@webp",
-        "portrait": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/05a7a34b-9272-4c06-8074-79fec2978f29/23ead5e8-7774-40fc-8291-09a761ef8f2e.webp@webp",
-        "backgroundColor": "#671d27"
-    },
-    {
-        "id": 2,
-        "name": "Bagel",
-        "description": "One of the three most powerful adventurers in their city, alongside her best friends, Berry and Basil.\nBright and cheerful, sometimes to her own detriment. But everything usually works out in her favor.\nPopular with the girls, and VERY popular with the guys. As in, she's a menhera and forces a harem of guys to bully other boys into joining.",
-        "icon": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/5076c8de-791f-48d9-8c88-1025d185e240/0990dbaa-8c9e-4244-813d-f0fffc551bb2.webp@webp",
-        "portrait": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/5076c8de-791f-48d9-8c88-1025d185e240/d4847ab7-ad99-4737-b5b9-6b0c58e9d458.webp@webp",
-        "backgroundColor": "#0c4383"
-    },
-    {
-        "id": 3,
-        "name": "Alisa",
-        "description": "Originally a regular girl from Earth, but died and was reincarnated as a demon. As a demon, she is now bound to another novice adventurer to do their bidding. Of her adventurer group, she's the best fighter. Wields a gunblade.\nCan see the future through her \"third eye,\" which usually floats next to her.\nGenerally a quiet girl and not talkative, but otherwise energetic in other ways.\nHas a sugar and coffee addiction. She will go beast mode when they are consumed.",
-        "icon": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/9142c7e4-fcb1-4d27-b341-f0b7f8094fca/6dde5521-0a25-4de7-90ac-94474a7b4927.webp@webp",
-        "portrait": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/9142c7e4-fcb1-4d27-b341-f0b7f8094fca/33a7faa0-3589-4c4a-8b9d-0e8d9f0a8b7d.webp@webp",
-        "backgroundColor": "#aa220c"
-    }
+  {
+    "id": 0,
+    "name": "Basil",
+    "description": "One of the three most powerful adventurers in their city, alongside her best friends, Berry and Bagel.\nLikes fighting. Maybe a bit too much. But she can certainly back up her confidence.\nIs a mall ninja. She likes to pretend to that her ninja obsession is to connect with her ancestral roots, but it's really because she's a weeaboo.",
+    "icon": "https://image-cdn.unvale.io/insecure/s:750::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/752de099-eb4e-4a1b-8ba0-63d92175371e/3dc2bfa8-d5f8-4133-88fe-6b410427181f.webp@webp",
+    "portrait": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/752de099-eb4e-4a1b-8ba0-63d92175371e/879f4e60-5257-4174-b1e9-3a5f77907f07.webp@webp",
+    "backgroundColor": "#1d6727"
+  },
+  {
+    "id": 1,
+    "name": "Berry",
+    "description": "One of the three most powerful adventurers in their city, alongside her best friends, Bagel and Basil. Of the three, she's the most level-headed and the tactician of the group. At least, when she's not in active combat. Then she lets her inner demon out.\nReally into scientific research and how to make magic more accessible to more people.\nHopeless romantic. Her standards are too high to secure a date with any man, despite her complaining about being single.",
+    "icon": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/05a7a34b-9272-4c06-8074-79fec2978f29/b7766930-431d-49a8-a4c2-922387b94329.webp@webp",
+    "portrait": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/05a7a34b-9272-4c06-8074-79fec2978f29/23ead5e8-7774-40fc-8291-09a761ef8f2e.webp@webp",
+    "backgroundColor": "#671d27"
+  },
+  {
+    "id": 2,
+    "name": "Bagel",
+    "description": "One of the three most powerful adventurers in their city, alongside her best friends, Berry and Basil.\nBright and cheerful, sometimes to her own detriment. But everything usually works out in her favor.\nPopular with the girls, and VERY popular with the guys. As in, she's a menhera and forces a harem of guys to bully other boys into joining.",
+    "icon": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/5076c8de-791f-48d9-8c88-1025d185e240/0990dbaa-8c9e-4244-813d-f0fffc551bb2.webp@webp",
+    "portrait": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/5076c8de-791f-48d9-8c88-1025d185e240/d4847ab7-ad99-4737-b5b9-6b0c58e9d458.webp@webp",
+    "backgroundColor": "#0c4383"
+  },
+  {
+    "id": 3,
+    "name": "Alisa",
+    "description": "Originally a regular girl from Earth, but died and was reincarnated as a demon. As a demon, she is now bound to another novice adventurer to do their bidding. Of her adventurer group, she's the best fighter. Wields a gunblade.\nCan see the future through her \"third eye,\" which usually floats next to her.\nGenerally a quiet girl and not talkative, but otherwise energetic in other ways.\nHas a sugar and coffee addiction. She will go beast mode when they are consumed.",
+    "icon": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/9142c7e4-fcb1-4d27-b341-f0b7f8094fca/6dde5521-0a25-4de7-90ac-94474a7b4927.webp@webp",
+    "portrait": "https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/9142c7e4-fcb1-4d27-b341-f0b7f8094fca/33a7faa0-3589-4c4a-8b9d-0e8d9f0a8b7d.webp@webp",
+    "backgroundColor": "#aa220c"
+  }
 ]

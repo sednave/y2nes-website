@@ -1,10 +1,10 @@
 @import url("../../App.css");
 
 h2 {
-    text-shadow: none;
-    color: var(--primary-color);
-    margin-top: 1em;
-    margin-bottom: 0.5em;
+  text-shadow: none;
+  color: var(--primary-color);
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 #news-section {
@@ -15,7 +15,16 @@ h2 {
   flex-direction: column;
   align-items: center;
   padding-bottom: 4em;
-  background: linear-gradient(to right, var(--background-color) 0%, rgba(0,0,0,0.0) 25%, rgba(0,0,0,0.0) 50%, var(--background-color) 75%, var(--background-color) 100%), url('https://f4.bcbits.com/img/a2242049588_10.jpg') no-repeat;
+  background:
+    linear-gradient(
+      to right,
+      var(--background-color) 0%,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0) 50%,
+      var(--background-color) 75%,
+      var(--background-color) 100%
+    ),
+    url("https://f4.bcbits.com/img/a2242049588_10.jpg") no-repeat;
   background-size: 70%;
   background-position: 0% 40%;
   text-shadow:
@@ -32,8 +41,7 @@ h2 {
 
 #news-grid {
   display: grid;
-  grid-template: 
-    "1fr 1fr";
+  grid-template: "1fr 1fr";
   gap: 8em;
 }
 
@@ -45,8 +53,15 @@ h2 {
 #y2nes-social-links {
   width: 100%;
   background:
-    linear-gradient(to right, var(--background-color) 0%, rgba(0,0,0,0.0) 25%, rgba(0,0,0,0.0) 50%, var(--background-color) 75%, var(--background-color) 100%),
-    url('../../../assets/y2nes_banner.png') no-repeat;
+    linear-gradient(
+      to right,
+      var(--background-color) 0%,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0) 50%,
+      var(--background-color) 75%,
+      var(--background-color) 100%
+    ),
+    url("../../../assets/y2nes_banner.png") no-repeat;
   background-size: 100%;
   background-position: -10vw 0%;
   transition: background-size 0.5s;
@@ -64,8 +79,15 @@ h2 {
 #y2nes-music-links {
   width: 100%;
   background:
-    linear-gradient(to right, var(--background-color) 0%, var(--background-color) 25%, rgba(0,0,0,0.0) 75%, rgba(0,0,0,0.0) 90%, var(--background-color) 100%),
-    url('../../../assets/max_power_banner.png') no-repeat;
+    linear-gradient(
+      to right,
+      var(--background-color) 0%,
+      var(--background-color) 25%,
+      rgba(0, 0, 0, 0) 75%,
+      rgba(0, 0, 0, 0) 90%,
+      var(--background-color) 100%
+    ),
+    url("../../../assets/max_power_banner.png") no-repeat;
   background-size: 85%;
   background-position: 100% 45%;
   transition: background-size 0.5s;
@@ -112,10 +134,12 @@ h2 {
   transition: background-color 0.2s;
 }
 
-#y2nes-social-links h2, #y2nes-social-links a{
+#y2nes-social-links h2,
+#y2nes-social-links a {
   grid-column: 3;
 }
 
-#y2nes-music-links h2, #y2nes-music-links a{
+#y2nes-music-links h2,
+#y2nes-music-links a {
   grid-column: 1;
 }
