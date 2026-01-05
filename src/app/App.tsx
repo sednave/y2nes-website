@@ -5,6 +5,7 @@ import NotFoundPage from './routes/NotFoundPage/NotFoundPage';
 import Characters from './routes/Characters/Characters';
 import Store from './routes/Store/Store';
 import Music from './routes/Music/Music';
+import About from './routes/About/About';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="/home" element={<Homepage />} />
         <Route path="/characters" element={<Characters />} />
         <Route path="/music" element={<Music />} />
-        <Route path="/about" element={<Homepage />} /> {/* TODO Add About Page */ }
+        <Route path="/about" element={<About />} />
         <Route path="/store" element={<Store />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
