@@ -38,8 +38,8 @@
     color: transparent;
 }
 
-.character-icon-button:hover strong {
-    position: absolute;
+.character-icon-button:hover strong,
+.character-icon-button:focus-within strong {
     color: white;
     text-shadow: 0 0 5px black,
      0 0 10px black;
