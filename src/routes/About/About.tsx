@@ -1,7 +1,7 @@
-import Footer from "../../../components/Footer";
-import Header from "../../../components/header/Header";
+import Footer from "../../components/Footer";
+import Header from "../../components/header/Header";
 import Marquee from "react-fast-marquee";
-import SiteBackground from "../../../components/backgrounds/SiteBackground";
+import SiteBackground from "../../components/backgrounds/SiteBackground";
 import "./About.css";
 
 const About = () => {

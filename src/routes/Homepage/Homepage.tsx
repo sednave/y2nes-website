@@ -1,8 +1,8 @@
-import Footer from "../../../components/Footer";
-import Header from "../../../components/header/Header";
+import Footer from "../../components/Footer";
+import Header from "../../components/header/Header";
 import Marquee from "react-fast-marquee";
 import "./Homepage.css";
-import SiteBackground from "../../../components/backgrounds/SiteBackground";
+import SiteBackground from "../../components/backgrounds/SiteBackground";
 
 const Homepage = () => {
   const newsSection = (

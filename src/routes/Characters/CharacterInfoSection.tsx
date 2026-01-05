@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef, useState } from "react";
-import useCharacterInfo from "../../../hooks/useCharacterInfo";
-import RichParagraph from "../../../components/RichParagraph";
+import useCharacterInfo from "../../hooks/useCharacterInfo";
+import RichParagraph from "../../components/RichParagraph";
 
 type Props = {
   characterId: number;
