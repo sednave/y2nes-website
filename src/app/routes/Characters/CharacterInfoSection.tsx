@@ -21,7 +21,7 @@ const CharacterInfoSection = ({characterId}: Props) => {
     }, [characterInfo])
 
     const referenceImage = <>
-        {characterInfo?.name === 'Alisa' && <img className='reference-sheet' src='https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/9142c7e4-fcb1-4d27-b341-f0b7f8094fca/da0ac781-7eb9-4471-a5bb-601a0218243e.webp@webp' alt='Alisa reference sheet'/>}
+        {characterInfo?.name === 'Alisa' && <img className='reference-sheet' src='https://image-cdn.unvale.io/insecure/s:1080::/quality:99/plain/https://prod-document-cdn.unvale.io/characters/9142c7e4-fcb1-4d27-b341-f0b7f8094fca/da0ac781-7eb9-4471-a5bb-601a0218243e.webp@webp' alt='Alisa reference sheet' style={{height:'500px', width: 'auto'}}/>}
     </>
 
     const backgroundColor = characterInfo ? characterInfo.backgroundColor : "transparent"
