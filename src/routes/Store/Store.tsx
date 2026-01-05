@@ -4,10 +4,35 @@ import Footer from "../../components/Footer";
 import Header from "../../components/header/Header";
 import MailingListInputField from "../../components/MailingListInputField";
 import "./Store.css";
+import { Helmet } from "react-helmet-async";
+
+const metaData = (
+  <Helmet>
+    <title>Store | Y2NES</title>
+    <meta
+      name="description"
+      content="Shop for official Y2NES merchandise, products, and artwork!"
+    />
+    <meta
+      name="keywords"
+      content="Y2NES, Shop, Store, Merch, Merchandise, Products"
+    />
+    <meta name="author" content="Y2NES" />
+
+    <meta property="og:title" content="Store | Y2NES" />
+    <meta
+      property="og:description"
+      content="Shop for official Y2NES merchandise, products, and artwork!"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://y2nes.com/store" />
+  </Helmet>
+);
 
 const Store = () => {
   return (
     <div id="store" className="page">
+      {metaData}
       <SiteBackground />
       <Header />
       <Marquee

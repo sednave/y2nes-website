@@ -7,6 +7,30 @@ import useCharacterInfos from "../../hooks/useCharacterInfos";
 import CharacterInfoSection from "./CharacterInfoSection";
 import SiteBackground from "../../components/backgrounds/SiteBackground";
 import Marquee from "react-fast-marquee";
+import { Helmet } from "react-helmet-async";
+
+const metaData = (
+  <Helmet>
+    <title>Characters | Y2NES</title>
+    <meta
+      name="description"
+      content="Learn about the characters of the Y2NES universe! Click on their portraits to learn more about each character's background and personality."
+    />
+    <meta
+      name="keywords"
+      content="Y2NES, Characters, OCs, Reference, Character"
+    />
+    <meta name="author" content="Y2NES" />
+
+    <meta property="og:title" content="Characters | Y2NES" />
+    <meta
+      property="og:description"
+      content="Learn about the characters of the Y2NES universe! Click on their portraits to learn more about each character's background and personality."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://y2nes.com/characters" />
+  </Helmet>
+);
 
 const Characters = () => {
   const [characterId, setCharacterId] = useState(-1);
@@ -33,6 +57,7 @@ const Characters = () => {
 
   return (
     <div className="page">
+      {metaData}
       <SiteBackground />
       <Header />
       <Marquee

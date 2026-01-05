@@ -3,10 +3,29 @@ import Header from "../../components/header/Header";
 import Marquee from "react-fast-marquee";
 import SiteBackground from "../../components/backgrounds/SiteBackground";
 import "./About.css";
+import { Helmet } from "react-helmet-async";
+
+const metaData = (
+  <Helmet>
+    <title>About | Y2NES</title>
+    <meta name="description" content="Background information on Y2NES." />
+    <meta name="keywords" content="Y2NES, Information, Info, About, EDM, Y2K" />
+    <meta name="author" content="Y2NES" />
+
+    <meta property="og:title" content="About | Y2NES" />
+    <meta
+      property="og:description"
+      content="Background information on Y2NES."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://y2nes.com/about" />
+  </Helmet>
+);
 
 const About = () => {
   return (
     <div className="page">
+      {metaData}
       <Header />
 
       <Marquee
