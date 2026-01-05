@@ -4,10 +4,9 @@ import Footer from "../../components/Footer";
 import Header from "../../components/header/Header";
 import MailingListInputField from "../../components/MailingListInputField";
 import "./Store.css";
-import { Helmet } from "react-helmet-async";
 
 const metaData = (
-  <Helmet>
+  <head>
     <title>Store | Y2NES</title>
     <meta
       name="description"
@@ -19,14 +18,31 @@ const metaData = (
     />
     <meta name="author" content="Y2NES" />
 
+    <meta property="og:site_name" content="Y2NES" />
     <meta property="og:title" content="Store | Y2NES" />
     <meta
       property="og:description"
       content="Shop for official Y2NES merchandise, products, and artwork!"
     />
-    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://y2nes.com/store" />
-  </Helmet>
+    <meta
+      property="og:image"
+      content="https://y2nes.com/assets/y2nes_banner-nN86aZgg.png"
+    />
+    <meta property="og:type" content="website" />
+
+    <meta property="twitter:title" content="Store | Y2NES" />
+    <meta
+      property="twitter:description"
+      content="Shop for official Y2NES merchandise, products, and artwork!"
+    />
+    <meta
+      property="twitter:image"
+      content="https://y2nes.com/assets/y2nes_banner-nN86aZgg.png"
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="@wivyrn" />
+  </head>
 );
 
 const Store = () => {

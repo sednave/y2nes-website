@@ -1,22 +1,38 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/header/Header";
 import "./NotFoundPage.css";
-import { Helmet } from "react-helmet-async";
 
 const metaData = (
-  <Helmet>
+  <head>
     <title>404 Not Found | Y2NES</title>
     <meta name="description" content="404 page. You shouldn't be here!" />
     <meta name="keywords" content="Y2NES" />
     <meta name="author" content="Y2NES" />
 
+    <meta property="og:site_name" content="Y2NES" />
     <meta property="og:title" content="404 Not Found | Y2NES" />
     <meta
       property="og:description"
       content="404 page. You shouldn't be here!"
     />
+    <meta
+      property="og:image"
+      content="https://y2nes.com/assets/y2nes_banner-nN86aZgg.png"
+    />
     <meta property="og:type" content="website" />
-  </Helmet>
+
+    <meta property="twitter:title" content="404 Not Found | Y2NES" />
+    <meta
+      property="twitter:description"
+      content="404 page. You shouldn't be here!"
+    />
+    <meta
+      property="twitter:image"
+      content="https://y2nes.com/assets/y2nes_banner-nN86aZgg.png"
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="@wivyrn" />
+  </head>
 );
 
 const NotFoundPage = () => {

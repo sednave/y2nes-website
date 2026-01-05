@@ -7,10 +7,9 @@ import useCharacterInfos from "../../hooks/useCharacterInfos";
 import CharacterInfoSection from "./CharacterInfoSection";
 import SiteBackground from "../../components/backgrounds/SiteBackground";
 import Marquee from "react-fast-marquee";
-import { Helmet } from "react-helmet-async";
 
 const metaData = (
-  <Helmet>
+  <head>
     <title>Characters | Y2NES</title>
     <meta
       name="description"
@@ -22,14 +21,31 @@ const metaData = (
     />
     <meta name="author" content="Y2NES" />
 
+    <meta property="og:site_name" content="Y2NES" />
     <meta property="og:title" content="Characters | Y2NES" />
     <meta
       property="og:description"
       content="Learn about the characters of the Y2NES universe! Click on their portraits to learn more about each character's background and personality."
     />
-    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://y2nes.com/characters" />
-  </Helmet>
+    <meta
+      property="og:image"
+      content="https://y2nes.com/assets/y2nes_banner-nN86aZgg.png"
+    />
+    <meta property="og:type" content="website" />
+
+    <meta property="twitter:title" content="Characters | Y2NES" />
+    <meta
+      property="twitter:description"
+      content="Learn about the characters of the Y2NES universe! Click on their portraits to learn more about each character's background and personality."
+    />
+    <meta
+      property="twitter:image"
+      content="https://y2nes.com/assets/y2nes_banner-nN86aZgg.png"
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="@wivyrn" />
+  </head>
 );
 
 const Characters = () => {

@@ -3,23 +3,39 @@ import Header from "../../components/header/Header";
 import Marquee from "react-fast-marquee";
 import SiteBackground from "../../components/backgrounds/SiteBackground";
 import "./About.css";
-import { Helmet } from "react-helmet-async";
 
 const metaData = (
-  <Helmet>
+  <head>
     <title>About | Y2NES</title>
     <meta name="description" content="Background information on Y2NES." />
     <meta name="keywords" content="Y2NES, Information, Info, About, EDM, Y2K" />
     <meta name="author" content="Y2NES" />
 
+    <meta property="og:site_name" content="Y2NES" />
     <meta property="og:title" content="About | Y2NES" />
     <meta
       property="og:description"
       content="Background information on Y2NES."
     />
-    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://y2nes.com/about" />
-  </Helmet>
+    <meta
+      property="og:image"
+      content="https://y2nes.com/assets/y2nes_banner-nN86aZgg.png"
+    />
+    <meta property="og:type" content="website" />
+
+    <meta property="twitter:title" content="About | Y2NES" />
+    <meta
+      property="twitter:description"
+      content="Background information on Y2NES."
+    />
+    <meta
+      property="twitter:image"
+      content="https://y2nes.com/assets/y2nes_banner-nN86aZgg.png"
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="@wivyrn" />
+  </head>
 );
 
 const About = () => {
