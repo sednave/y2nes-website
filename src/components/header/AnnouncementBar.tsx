@@ -1,5 +1,5 @@
 import Logo from '../Logo';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 
 const AnnouncementBar = () => {
     return <div className="announcement-bar">

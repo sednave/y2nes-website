@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router';
 import './App.css'
 import Homepage from './routes/Homepage/Homepage';
 import NotFoundPage from './routes/NotFoundPage/NotFoundPage';
@@ -8,18 +8,38 @@ import Music from './routes/Music/Music';
 import About from './routes/About/About';
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Homepage />
+    },
+    {
+      path: "/home",
+      element: <Homepage />
+    },
+    {
+      path: "/characters",
+      element: <Characters />
+    },
+    {
+      path: "/music",
+      element: <Music />
+    },
+    {
+      path: "/about",
+      element: <About />
+    },
+    {
+      path: "/store",
+      element: <Store />
+    },
+    {
+      path: "*",
+      element: <NotFoundPage />
+    },
+  ])
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/home" element={<Homepage />} />
-        <Route path="/characters" element={<Characters />} />
-        <Route path="/music" element={<Music />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/store" element={<Store />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
-    </BrowserRouter>
+    <RouterProvider router={router} />
   )
 }
 

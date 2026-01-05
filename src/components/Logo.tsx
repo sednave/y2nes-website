@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 const Logo = () => {
     return <Link to="/home" className="logo">
