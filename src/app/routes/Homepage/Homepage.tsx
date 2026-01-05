@@ -43,7 +43,7 @@ const Homepage = () => {
                     <a className="link-button" href="https://bsky.app/profile/wivyrn.bsky.social" target="_blank" rel="noopener noreferrer">BLUESKY</a>
                     <a className="link-button" href="https://www.tiktok.com/@y.2nes" target="_blank" rel="noopener noreferrer">TIKTOK</a>
                     <a className="link-button" href="https://discord.com/invite/28ZypjypMq" target="_blank" rel="noopener noreferrer">DISCORD SERVER</a>
-                    <a className="link-button" href="mailto:y2nes.official@gmail.com">EMAIL / INQUIRIES</a>
+                    <a className="link-button" href="mailto:contact@y2nes.com">EMAIL / INQUIRIES</a>
                 </div>
             </section>
 
