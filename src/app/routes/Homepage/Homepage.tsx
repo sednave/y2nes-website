@@ -2,6 +2,7 @@ import Footer from "../../../components/Footer";
 import Header from "../../../components/header/Header";
 import Marquee from "react-fast-marquee";
 import './Homepage.css'
+import SiteBackground from "../../../components/backgrounds/SiteBackground";
 
 const Homepage = () => {
 
@@ -20,6 +21,7 @@ const Homepage = () => {
 
     return <div className="page">
         <Header />
+
         <main>
             <Marquee autoFill={true} className="marquee" gradient={true} gradientColor="black" direction="right" speed={50}>
                 <p>TUNE IN!</p>
@@ -60,13 +62,14 @@ const Homepage = () => {
                     <a className="link-button" href="https://soundcloud.com/y2nes" target="_blank" rel="noopener noreferrer">SOUNDCLOUD</a>
                 </div>
             </section>
-
             <Marquee autoFill={true} className="marquee" gradient={true} gradientColor="black" direction="left" speed={50}>
                 <p>TUNE IN!</p>
                 <p>·</p>
             </Marquee>
         </main>
+
         <Footer />
+        <SiteBackground />
     </div>
 }
 
