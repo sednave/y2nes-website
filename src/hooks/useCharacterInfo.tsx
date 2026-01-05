@@ -5,7 +5,7 @@ const useCharacterInfo = (characterId: number) => {
   return useMemo(
     () =>
       charactersInfo.find((characterInfo) => characterInfo.id === characterId),
-    [characterId, charactersInfo]
+    [characterId]
   );
 };
 
