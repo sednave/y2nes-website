@@ -38,6 +38,9 @@
     position: absolute;
     font-size: 2rem;
     color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .character-icon-button:hover strong,
