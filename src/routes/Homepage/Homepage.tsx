@@ -3,10 +3,10 @@ import Header from "../../components/header/Header";
 import Marquee from "react-fast-marquee";
 import "./Homepage.css";
 import SiteBackground from "../../components/backgrounds/SiteBackground";
-import bannerImage from "../../assets/y2nes_banner.png";
+const bannerImage = "/assets/y2nes_banner.png";
 
 const metadata = (
-  <>
+  <article>
     <title>Y2NES - Homepage</title>
     <meta
       name="description"
@@ -36,7 +36,7 @@ const metadata = (
     <meta name="twitter:image" content={`https://y2nes.com${bannerImage}`} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@wivyrn" />
-  </>
+  </article>
 );
 
 const Homepage = () => {
