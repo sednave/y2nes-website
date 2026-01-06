@@ -3,9 +3,10 @@ import Header from "../../components/header/Header";
 import Marquee from "react-fast-marquee";
 import SiteBackground from "../../components/backgrounds/SiteBackground";
 import "./About.css";
+import bannerImage from "../../assets/y2nes_banner.png";
 
-const metaData = (
-  <head>
+const metadata = (
+  <>
     <title>About | Y2NES</title>
     <meta name="description" content="Background information on Y2NES." />
     <meta name="keywords" content="Y2NES, Information, Info, About, EDM, Y2K" />
@@ -18,30 +19,24 @@ const metaData = (
       content="Background information on Y2NES."
     />
     <meta property="og:url" content="https://y2nes.com/about" />
-    <meta
-      property="og:image"
-      content="https://y2nes.com/assets/y2nes_banner-nN86aZgg.png"
-    />
+    <meta property="og:image" content={`https://y2nes.com${bannerImage}`} />
     <meta property="og:type" content="website" />
 
-    <meta property="twitter:title" content="About | Y2NES" />
+    <meta name="twitter:title" content="About | Y2NES" />
     <meta
-      property="twitter:description"
+      name="twitter:description"
       content="Background information on Y2NES."
     />
-    <meta
-      property="twitter:image"
-      content="https://y2nes.com/assets/y2nes_banner-nN86aZgg.png"
-    />
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:site" content="@wivyrn" />
-  </head>
+    <meta name="twitter:image" content={`https://y2nes.com${bannerImage}`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@wivyrn" />
+  </>
 );
 
 const About = () => {
   return (
     <div className="page">
-      {metaData}
+      {metadata}
       <Header />
 
       <Marquee

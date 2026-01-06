@@ -4,9 +4,10 @@ import Footer from "../../components/Footer";
 import Header from "../../components/header/Header";
 import MailingListInputField from "../../components/MailingListInputField";
 import "./Store.css";
+import bannerImage from "../../assets/y2nes_banner.png";
 
-const metaData = (
-  <head>
+const metadata = (
+  <>
     <title>Store | Y2NES</title>
     <meta
       name="description"
@@ -25,30 +26,24 @@ const metaData = (
       content="Shop for official Y2NES merchandise, products, and artwork!"
     />
     <meta property="og:url" content="https://y2nes.com/store" />
-    <meta
-      property="og:image"
-      content="https://y2nes.com/assets/y2nes_banner-nN86aZgg.png"
-    />
+    <meta property="og:image" content={`https://y2nes.com${bannerImage}`} />
     <meta property="og:type" content="website" />
 
-    <meta property="twitter:title" content="Store | Y2NES" />
+    <meta name="twitter:title" content="Store | Y2NES" />
     <meta
-      property="twitter:description"
+      name="twitter:description"
       content="Shop for official Y2NES merchandise, products, and artwork!"
     />
-    <meta
-      property="twitter:image"
-      content="https://y2nes.com/assets/y2nes_banner-nN86aZgg.png"
-    />
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:site" content="@wivyrn" />
-  </head>
+    <meta name="twitter:image" content={`https://y2nes.com${bannerImage}`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@wivyrn" />
+  </>
 );
 
 const Store = () => {
   return (
     <div id="store" className="page">
-      {metaData}
+      {metadata}
       <SiteBackground />
       <Header />
       <Marquee
