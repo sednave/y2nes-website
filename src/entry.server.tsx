@@ -2,9 +2,15 @@ import { renderToString } from "react-dom/server";
 import { useRoutes, StaticRouter } from "react-router";
 import routes from "./routes";
 
+function App() {
+  return useRoutes(routes);
+}
+
 export function render(url: string) {
   const html = renderToString(
-    <StaticRouter location={url}>{useRoutes(routes)}</StaticRouter>
+    <StaticRouter location={url}>
+      <App />
+    </StaticRouter>
   );
 
   return `
