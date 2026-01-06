@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build:client": "tsc -b && vite build",
-    "build:server": "tsc -b && vite build --config vite.config.server.ts",
+    "build:client": "vite build",
+    "build:server": "vite build --config vite.config.server.ts",
     "build": "tsc -b && bun run build:client && bun run build:server",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -17,7 +17,8 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-fast-marquee": "^1.6.5",
-    "react-router": "^7.11.0"
+    "react-router": "^7.11.0",
+    "react-router-dom": "^7.11.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

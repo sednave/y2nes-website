@@ -4,7 +4,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/header/Header";
 import MailingListInputField from "../../components/MailingListInputField";
 import "./Store.css";
-import bannerImage from "../../assets/y2nes_banner.png";
+import bannerImage from "/assets/y2nes_banner.png";
 
 const metadata = (
   <>

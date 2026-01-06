@@ -5,7 +5,7 @@ import "./Music.css";
 import MusicListings from "./MusicListings";
 import SiteBackground from "../../components/backgrounds/SiteBackground";
 import Marquee from "react-fast-marquee";
-import bannerImage from "../../assets/y2nes_banner.png";
+import bannerImage from "/assets/y2nes_banner.png";
 
 const metadata = (
   <>

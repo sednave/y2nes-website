@@ -3,7 +3,7 @@ import Header from "../../components/header/Header";
 import Marquee from "react-fast-marquee";
 import SiteBackground from "../../components/backgrounds/SiteBackground";
 import "./About.css";
-import bannerImage from "../../assets/y2nes_banner.png";
+import bannerImage from "/assets/y2nes_banner.png";
 
 const metadata = (
   <>

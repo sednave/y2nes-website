@@ -1,15 +1,14 @@
-import { RouterProvider, StaticRouter } from "react-router";
-import { renderToPipeableStream } from "react-dom/server";
+import { renderToString } from "react-dom/server";
 import router from "./router";
+import {
+  createStaticRouter,
+  StaticRouterProvider,
+} from "react-router-dom/server";
 
 export function render(url: string) {
-  const app = (
-    <StaticRouter location={url}>
-      <RouterProvider router={router} />
-    </StaticRouter>
-  );
+  const staticRouter = createStaticRouter(router);
 
-  const html = renderToPipeableStream(app);
+  const html = renderToString(<StaticRouterProvider router={staticRouter} />);
   return `
     <!DOCTYPE html>
     <html lang="en">
@@ -20,7 +19,7 @@ export function render(url: string) {
       </head>
       <body>
         <div id="root">${html}</div>
-        <script type="module" src="/src/main.tsx"></script>
+        <script type="module" src="/dist/client/main.js"></script>
       </body>
     </html>
   `;

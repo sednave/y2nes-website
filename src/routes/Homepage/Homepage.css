@@ -59,7 +59,7 @@ h2 {
       var(--background-color) 75%,
       var(--background-color) 100%
     ),
-    url("../../assets/y2nes_banner.png") no-repeat;
+    url("/assets/y2nes_banner.png") no-repeat;
   background-size: 100%;
   background-position: -10vw 0%;
   transition: background-size 0.5s;
