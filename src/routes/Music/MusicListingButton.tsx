@@ -1,5 +1,3 @@
-import TestTrack1Image from "https://y2nes.com/assets/test_track_1.png";
-
 type Props = {
   listingId: string;
   selectedId: string;
@@ -19,7 +17,7 @@ const MusicListingButton = ({ listingId, selectedId, onClick }: Props) => {
     "CONTINUE THE BROADCAST": "https://f4.bcbits.com/img/a2414336345_10.jpg",
     "KNOW I'M A KING": "https://f4.bcbits.com/img/a1218000490_10.jpg",
     "LET IT BUBBLE UP": "https://f4.bcbits.com/img/a4079986900_10.jpg",
-    "Test Track 1": TestTrack1Image,
+    "Test Track 1": "https://y2nes.com/assets/test_track_1.png",
   };
 
   const backgroundImage = LISTING_IMAGES[listingId];

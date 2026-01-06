@@ -4,8 +4,9 @@ import Characters from "./routes/Characters/Characters";
 import Store from "./routes/Store/Store";
 import Music from "./routes/Music/Music";
 import About from "./routes/About/About";
+import type { RouteObject } from "react-router";
 
-const routes = [
+const routes: RouteObject[] = [
   {
     path: "/",
     element: <Homepage />,
