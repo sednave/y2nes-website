@@ -10,7 +10,7 @@ import Marquee from "react-fast-marquee";
 import bannerImage from "/assets/y2nes_banner.png";
 
 const metadata = (
-  <>
+  <article>
     <title>Characters | Y2NES</title>
     <meta
       name="description"
@@ -40,7 +40,7 @@ const metadata = (
     <meta name="twitter:image" content={`https://y2nes.com${bannerImage}`} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@wivyrn" />
-  </>
+  </article>
 );
 
 const Characters = () => {

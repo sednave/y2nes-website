@@ -5,6 +5,11 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: "main.js",
+      },
+    },
     outDir: "dist/client",
   },
 });

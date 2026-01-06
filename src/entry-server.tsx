@@ -1,14 +1,13 @@
 import { renderToString } from "react-dom/server";
 import router from "./router";
-import {
-  createStaticRouter,
-  StaticRouterProvider,
-} from "react-router-dom/server";
+import { RouterProvider, StaticRouter } from "react-router";
 
 export function render(url: string) {
-  const staticRouter = createStaticRouter(router);
-
-  const html = renderToString(<StaticRouterProvider router={staticRouter} />);
+  const html = renderToString(
+    <StaticRouter location={url}>
+      <RouterProvider router={router} />
+    </StaticRouter>
+  );
   return `
     <!DOCTYPE html>
     <html lang="en">
