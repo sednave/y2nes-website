@@ -5,6 +5,38 @@ import "./Music.css";
 import MusicListings from "./MusicListings";
 import SiteBackground from "../../components/backgrounds/SiteBackground";
 import Marquee from "react-fast-marquee";
+import bannerImage from "../../assets/y2nes_banner.png";
+
+const metadata = (
+  <>
+    <title>Music | Y2NES</title>
+    <meta name="description" content="Listen to Y2NES's music catalog." />
+    <meta
+      name="keywords"
+      content="Y2NES, Music, Album, Single, Singles, Electronic, EDM, Y2K, Spotify, Youtube, Apple Music, Bandcamp"
+    />
+    <meta name="author" content="Y2NES" />
+
+    <meta property="og:site_name" content="Y2NES" />
+    <meta property="og:title" content="Music | Y2NES" />
+    <meta
+      property="og:description"
+      content="Listen to Y2NES's music catalog."
+    />
+    <meta property="og:url" content="https://y2nes.com/music" />
+    <meta property="og:image" content={`https://y2nes.com${bannerImage}`} />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="Music | Y2NES" />
+    <meta
+      name="twitter:description"
+      content="Listen to Y2NES's music catalog."
+    />
+    <meta name="twitter:image" content={`https://y2nes.com${bannerImage}`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@wivyrn" />
+  </>
+);
 
 const Music = () => {
   const [songType, setSongType] = useState("");
@@ -12,6 +44,7 @@ const Music = () => {
   const inactiveBackgroundColor = "rgba(0, 0, 0, 0.5)";
   return (
     <div className="page">
+      {metadata}
       <SiteBackground />
       <Header />
       <Marquee
