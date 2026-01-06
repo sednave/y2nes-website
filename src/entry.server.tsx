@@ -1,6 +1,6 @@
 import { renderToString } from "react-dom/server";
 import { useRoutes } from "react-router";
-import { StaticRouter } from "react-router-dom/server";
+import { StaticRouter } from "react-router-dom";
 import routes from "./routes";
 
 function App() {
