@@ -22,7 +22,6 @@ export function render(url: string) {
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-          <link rel="stylesheet" href="/assets/index.css" />
           <title>Y2NES</title>
           <meta name="description" content="Welcome to Y2NES! You'll find new song releases and other news from Y2NES here." />
         </head>
@@ -42,7 +41,6 @@ export function render(url: string) {
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-          <link rel="stylesheet" href="/assets/index.css" />
           <title>Y2NES</title>
           <meta name="description" content="Welcome to Y2NES! You'll find new song releases and other news from Y2NES here." />
         </head>
