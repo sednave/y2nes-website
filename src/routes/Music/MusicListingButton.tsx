@@ -1,4 +1,4 @@
-import TestTrack1Image from "/assets/test_track_1.png";
+import TestTrack1Image from "https://y2nes.com/assets/test_track_1.png";
 
 type Props = {
   listingId: string;

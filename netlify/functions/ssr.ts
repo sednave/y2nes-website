@@ -1,5 +1,5 @@
 import type { Handler } from "@netlify/functions";
-import { render } from "../../src/entry-server";
+import { render } from "../../src/entry.server";
 
 export const handler: Handler = async (event) => {
   try {

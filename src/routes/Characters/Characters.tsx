@@ -7,7 +7,7 @@ import useCharacterInfos from "../../hooks/useCharacterInfos";
 import CharacterInfoSection from "./CharacterInfoSection";
 import SiteBackground from "../../components/backgrounds/SiteBackground";
 import Marquee from "react-fast-marquee";
-import bannerImage from "/assets/y2nes_banner.png";
+const bannerImage = "/assets/y2nes_banner.png";
 
 const metadata = (
   <article>

@@ -1,7 +1,7 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/header/Header";
 import "./NotFoundPage.css";
-import bannerImage from "/assets/y2nes_banner.png";
+const bannerImage = "/assets/y2nes_banner.png";
 
 const metadata = (
   <article>
