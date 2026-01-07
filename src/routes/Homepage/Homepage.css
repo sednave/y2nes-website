@@ -20,7 +20,6 @@ h2 {
 #news-section {
   width: 100%;
   display: flex;
-  padding-bottom: 4em;
   flex-direction: column;
   align-items: center;
   text-shadow:
@@ -102,8 +101,7 @@ h2 {
       to right,
       var(--background-color) 0%,
       rgba(0, 0, 0, 0) 25%,
-      rgba(0, 0, 0, 0) 50%,
-      var(--background-color) 75%,
+      rgba(0, 0, 0, 0) 75%,
       var(--background-color) 100%
     );
   }
@@ -125,7 +123,7 @@ h2 {
   }
 
   #y2nes-social-links .links-container {
-    margin-left: 40rem;
+    margin-left: max(4rem, calc(50% - 20rem));
   }
 
   #y2nes-music-links {
@@ -140,7 +138,7 @@ h2 {
   }
 
   #y2nes-music-links .links-container {
-    margin-right: 40rem;
+    margin-right: max(4rem, calc(50% - 20rem));
   }
 
   .background-image {

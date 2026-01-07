@@ -4,10 +4,11 @@
   grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
   gap: 2rem;
   justify-items: center;
+  grid-auto-flow: row dense;
 }
 
 .character-icon-button {
-  --card-width: clamp(10rem, 22vw, 12.5rem);
+  --card-width: clamp(12rem, 22vw, 12.5rem);
   --card-height: clamp(18rem, 40vw, 25rem);
 
   border: none;

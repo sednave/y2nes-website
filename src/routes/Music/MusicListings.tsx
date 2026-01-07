@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import MusicListing from "./MusicListing";
 import MusicListingButton from "./MusicListingButton";
 
@@ -10,11 +10,8 @@ const MusicListings = ({ listingType }: Props) => {
   const [listingId, setListingId] = useState("");
   const [row, setRow] = useState(0);
 
-  const grid = document.querySelector(".music-listings");
-  const gridColumns = grid
-    ? getComputedStyle(grid).gridTemplateColumns.split(" ").length
-    : 4;
-
+  const [gridColumns, setGridColumns] = useState(4);
+  const gridRef = useRef<HTMLElement>(null);
   const handleMusicListingButtonClick = (listingId: string, index: number) => {
     setListingId(listingId);
     setRow(Math.floor(index / gridColumns) + 2);
@@ -23,23 +20,35 @@ const MusicListings = ({ listingType }: Props) => {
   useEffect(() => {
     setListingId("");
     setRow(0);
+
+    const updateGridColumns = () => {
+      if (gridRef.current) {
+        const cols = getComputedStyle(
+          gridRef.current,
+        ).gridTemplateColumns.split(" ").length;
+        setGridColumns(cols);
+      }
+    };
+
+    window.addEventListener("resize", updateGridColumns);
+    return () => window.removeEventListener("resize", updateGridColumns);
   }, [listingType]);
 
   let musicListings = <></>;
   switch (listingType) {
     case "albums":
+      const albums = ["Break! The Scarlet Devil!", "ANTI-CULTURED"];
       musicListings = (
-        <section className="music-listings">
-          <MusicListingButton
-            listingId="ANTI-CULTURED"
-            selectedId={listingId}
-            onClick={(listingId) => handleMusicListingButtonClick(listingId, 0)}
-          />
-          <MusicListingButton
-            listingId="Break! The Scarlet Devil!"
-            selectedId={listingId}
-            onClick={(listingId) => handleMusicListingButtonClick(listingId, 1)}
-          />
+        <section className="music-listings" ref={gridRef}>
+          {albums.reverse().map((value, index) => (
+            <MusicListingButton
+              listingId={value}
+              selectedId={listingId}
+              onClick={(listingId) =>
+                handleMusicListingButtonClick(listingId, index)
+              }
+            />
+          ))}
           {listingId && (
             <MusicListing listingId={listingId} style={{ gridRow: row }} />
           )}
@@ -47,48 +56,27 @@ const MusicListings = ({ listingType }: Props) => {
       );
       break;
     case "singles":
+      const singles = [
+        "STARDUSTER",
+        "FREEFALL",
+        "STARLIGHT EYES",
+        "MAX POWER (feat. Space Bwoi)",
+        "AIN'T MOVING",
+        "CONTINUE THE BROADCAST",
+        "KNOW I'M A KING",
+        "LET IT BUBBLE UP",
+      ];
       musicListings = (
-        <section className="music-listings">
-          <MusicListingButton
-            listingId="LET IT BUBBLE UP"
-            selectedId={listingId}
-            onClick={(listingId) => handleMusicListingButtonClick(listingId, 7)}
-          />
-          <MusicListingButton
-            listingId="KNOW I'M A KING"
-            selectedId={listingId}
-            onClick={(listingId) => handleMusicListingButtonClick(listingId, 6)}
-          />
-          <MusicListingButton
-            listingId="CONTINUE THE BROADCAST"
-            selectedId={listingId}
-            onClick={(listingId) => handleMusicListingButtonClick(listingId, 5)}
-          />
-          <MusicListingButton
-            listingId="AIN'T MOVING"
-            selectedId={listingId}
-            onClick={(listingId) => handleMusicListingButtonClick(listingId, 4)}
-          />
-          <MusicListingButton
-            listingId="MAX POWER (feat. Space Bwoi)"
-            selectedId={listingId}
-            onClick={(listingId) => handleMusicListingButtonClick(listingId, 3)}
-          />
-          <MusicListingButton
-            listingId="STARLIGHT EYES"
-            selectedId={listingId}
-            onClick={(listingId) => handleMusicListingButtonClick(listingId, 2)}
-          />
-          <MusicListingButton
-            listingId="FREEFALL"
-            selectedId={listingId}
-            onClick={(listingId) => handleMusicListingButtonClick(listingId, 1)}
-          />
-          <MusicListingButton
-            listingId="STARDUSTER"
-            selectedId={listingId}
-            onClick={(listingId) => handleMusicListingButtonClick(listingId, 0)}
-          />
+        <section className="music-listings" ref={gridRef}>
+          {singles.reverse().map((value, index) => (
+            <MusicListingButton
+              listingId={value}
+              selectedId={listingId}
+              onClick={(listingId) =>
+                handleMusicListingButtonClick(listingId, index)
+              }
+            />
+          ))}
           {listingId && (
             <MusicListing listingId={listingId} style={{ gridRow: row }} />
           )}
@@ -96,13 +84,18 @@ const MusicListings = ({ listingType }: Props) => {
       );
       break;
     case "extras":
+      const extras = ["Test Track 1"];
       musicListings = (
-        <section className="music-listings">
-          <MusicListingButton
-            listingId="Test Track 1"
-            selectedId={listingId}
-            onClick={(listingId) => handleMusicListingButtonClick(listingId, 0)}
-          />
+        <section className="music-listings" ref={gridRef}>
+          {extras.reverse().map((value, index) => (
+            <MusicListingButton
+              listingId={value}
+              selectedId={listingId}
+              onClick={(listingId) =>
+                handleMusicListingButtonClick(listingId, index)
+              }
+            />
+          ))}
           {listingId && (
             <MusicListing listingId={listingId} style={{ gridRow: row }} />
           )}
