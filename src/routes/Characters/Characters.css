@@ -1,28 +1,19 @@
-#characters {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: fit-content;
-  margin: 4vh auto;
-  background-color: var(--background-color);
-  box-shadow:
-    0 0 10px white,
-    0 0 50px var(--primary-color);
-  border-radius: 2rem;
-  padding: 4rem;
-}
-
 #character-icons {
-  display: flex;
-  flex-direction: row;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
   gap: 2rem;
+  justify-items: center;
 }
 
 .character-icon-button {
+  --card-width: clamp(10rem, 22vw, 12.5rem);
+  --card-height: clamp(18rem, 40vw, 25rem);
+
   border: none;
   border-radius: 1rem;
-  width: 200px;
-  height: 400px;
+  width: var(--card-width);
+  height: var(--card-height);
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -37,7 +28,8 @@
 .character-icon-button strong {
   position: absolute;
   font-size: 2rem;
-  color: transparent;
+  color: white;
+  opacity: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -45,7 +37,7 @@
 
 .character-icon-button:hover strong,
 .character-icon-button:focus-within strong {
-  color: white;
+  opacity: 1;
   text-shadow:
     0 0 5px black,
     0 0 10px black;
@@ -68,22 +60,23 @@
 
 #character-info-section {
   width: 100%;
-  overflow: hidden;
   transition: height 0.3s ease;
 }
 
 #character-info-wrapper {
-  width: 800px;
-  padding: 4em;
+  width: 90%;
+  padding: clamp(1.5rem, 5vw, 4rem);
   margin: 0 auto;
   font-size: 1.2rem;
+  max-width: 100%;
 }
 
 .character-info-portrait {
-  width: 200px;
-  height: 250px;
+  width: clamp(10rem, 40vw, 12.5rem);
+  aspect-ratio: 4 / 5;
+
   object-fit: cover;
-  display: inline;
+  display: flex;
   float: left;
   border-radius: 2em;
   margin-right: 2em;

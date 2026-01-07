@@ -1,36 +1,26 @@
 .bandcamp-player {
   border-radius: 1em;
   border: none;
-  height: 20rem;
-  width: 20rem;
+  width: min(100%, 20rem);
+  aspect-ratio: 1 / 1;
   float: left;
   margin-right: 2em;
   margin-bottom: 2em;
 }
 
-#music-page {
-  margin: 4vh auto;
-  background-color: var(--background-color);
-  box-shadow:
-    0 0 10px #fff,
-    0 0 50px var(--primary-color);
-  border-radius: 2rem;
-  padding: 4rem 4rem 0 4rem;
-  width: fit-content;
-  overflow: hidden;
-}
-
 #song-categories {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   gap: 2em;
+  justify-items: center;
 }
 
 .song-category-button {
+  aspect-ratio: 1 / 1;
   border: none;
   border-radius: 1rem;
-  height: 20rem;
-  width: 20rem;
+  width: 100%;
   color: white;
   font-weight: bolder;
   font-size: 2rem;
@@ -50,10 +40,10 @@
 }
 
 .music-item-listing {
+  aspect-ratio: 1 / 1;
   border: none;
   border-radius: 1rem;
-  width: 25rem;
-  height: 25rem;
+  width: 100%;
   background-position: center;
   background-size: 100%;
   background-color: black;
@@ -74,31 +64,24 @@
 }
 
 .music-listings {
-  background: linear-gradient(
-    to top,
-    var(--primary-color) 0%,
-    var(--background-color) 100%
-  );
   width: 100%;
-  padding: 4em;
-}
-
-.music-listings-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  justify-content: center;
+  justify-items: re;
   gap: 2rem;
-  margin: auto;
-  max-width: fit-content;
+  margin-top: 4rem;
+  padding: 0;
 }
 
 .music-listing {
   color: var(--primary-color);
-  width: 50vw;
+  max-width: 100%;
   transition: height 0.5s;
   overflow: hidden;
   grid-column: 1 / -1;
   background-color: var(--background-color);
-  margin: 0 auto;
-  padding: 4em;
-  border-radius: 1rem;
+  margin: 0;
+  padding: 4rem;
+  border-radius: 0;
 }

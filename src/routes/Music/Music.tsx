@@ -58,7 +58,7 @@ const Music = () => {
         <p>SOUND OF THE PAST</p>
         <p>·</p>
       </Marquee>
-      <main id="music-page">
+      <main className="page-content">
         <h1>Y-TUNES</h1>
         <div id="song-categories">
           <button

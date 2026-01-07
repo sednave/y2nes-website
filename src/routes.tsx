@@ -1,9 +1,9 @@
 import Homepage from "./routes/Homepage/Homepage";
 import NotFoundPage from "./routes/NotFoundPage/NotFoundPage";
 import Characters from "./routes/Characters/Characters";
-import Store from "./routes/Store/Store";
+import Store from "./Store";
 import Music from "./routes/Music/Music";
-import About from "./routes/About/About";
+import About from "./routes/About";
 import type { RouteObject } from "react-router";
 
 const routes: RouteObject[] = [
