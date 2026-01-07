@@ -6,6 +6,19 @@ type Props = {
   listingType: string;
 };
 
+const albums = ["Break! The Scarlet Devil!", "ANTI-CULTURED"];
+const singles = [
+  "STARDUSTER",
+  "FREEFALL",
+  "STARLIGHT EYES",
+  "MAX POWER (feat. Space Bwoi)",
+  "AIN'T MOVING",
+  "CONTINUE THE BROADCAST",
+  "KNOW I'M A KING",
+  "LET IT BUBBLE UP",
+];
+const extras = ["Test Track 1"];
+
 const MusicListings = ({ listingType }: Props) => {
   const [listingId, setListingId] = useState("");
   const [row, setRow] = useState(0);
@@ -30,6 +43,7 @@ const MusicListings = ({ listingType }: Props) => {
       }
     };
 
+    updateGridColumns();
     window.addEventListener("resize", updateGridColumns);
     return () => window.removeEventListener("resize", updateGridColumns);
   }, [listingType]);
@@ -37,11 +51,11 @@ const MusicListings = ({ listingType }: Props) => {
   let musicListings = <></>;
   switch (listingType) {
     case "albums":
-      const albums = ["Break! The Scarlet Devil!", "ANTI-CULTURED"];
       musicListings = (
         <section className="music-listings" ref={gridRef}>
-          {albums.reverse().map((value, index) => (
+          {[...albums].reverse().map((value, index) => (
             <MusicListingButton
+              key={value}
               listingId={value}
               selectedId={listingId}
               onClick={(listingId) =>
@@ -56,20 +70,11 @@ const MusicListings = ({ listingType }: Props) => {
       );
       break;
     case "singles":
-      const singles = [
-        "STARDUSTER",
-        "FREEFALL",
-        "STARLIGHT EYES",
-        "MAX POWER (feat. Space Bwoi)",
-        "AIN'T MOVING",
-        "CONTINUE THE BROADCAST",
-        "KNOW I'M A KING",
-        "LET IT BUBBLE UP",
-      ];
       musicListings = (
         <section className="music-listings" ref={gridRef}>
-          {singles.reverse().map((value, index) => (
+          {[...singles].reverse().map((value, index) => (
             <MusicListingButton
+              key={value}
               listingId={value}
               selectedId={listingId}
               onClick={(listingId) =>
@@ -84,11 +89,11 @@ const MusicListings = ({ listingType }: Props) => {
       );
       break;
     case "extras":
-      const extras = ["Test Track 1"];
       musicListings = (
         <section className="music-listings" ref={gridRef}>
-          {extras.reverse().map((value, index) => (
+          {[...extras].reverse().map((value, index) => (
             <MusicListingButton
+              key={value}
               listingId={value}
               selectedId={listingId}
               onClick={(listingId) =>
