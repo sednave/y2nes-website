@@ -83,7 +83,7 @@ const Characters = () => {
         <p>·</p>
       </Marquee>
 
-      <main id="characters">
+      <main className="page-content">
         <h1>MEET THE CHARACTERS</h1>
         <div id="character-icons">{characterPortraits}</div>
         <CharacterInfoSection characterId={characterId} />

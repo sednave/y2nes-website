@@ -1,8 +1,7 @@
-import Footer from "../../components/Footer";
-import Header from "../../components/header/Header";
+import Footer from "../components/Footer";
+import Header from "../components/header/Header";
 import Marquee from "react-fast-marquee";
-import SiteBackground from "../../components/backgrounds/SiteBackground";
-import "./About.css";
+import SiteBackground from "../components/backgrounds/SiteBackground";
 const bannerImage = "/assets/y2nes_banner.png";
 
 const metadata = (
@@ -47,22 +46,20 @@ const About = () => {
         direction="right"
         speed={50}
       >
-        <p>TUNE IN!</p>
+        <p>INFO</p>
         <p>·</p>
       </Marquee>
 
-      <main>
-        <section id="about-section">
-          <h1>About Y2NES</h1>
-          <p>
-            Y2NES is a Y2K-inspired electronic music producer. Y2NES's glitchy
-            and funky music is a message for outsiders, for anyone told they
-            don’t fit or don't belong, to fight back and reclaim the magic the
-            system itself stole from them.
-          </p>
+      <main className="page-content">
+        <h1>About Y2NES</h1>
+        <p>
+          Y2NES is a Y2K-inspired electronic music producer. Y2NES's glitchy and
+          funky music is a message for outsiders, for anyone told they don’t fit
+          or don't belong, to fight back and reclaim the magic the system itself
+          stole from them.
+        </p>
 
-          <p>It's pronounced "Y-tunes".</p>
-        </section>
+        <p>It's pronounced "Y-tunes".</p>
       </main>
 
       <Marquee
@@ -73,7 +70,7 @@ const About = () => {
         direction="left"
         speed={50}
       >
-        <p>TUNE IN!</p>
+        <p>INFO</p>
         <p>·</p>
       </Marquee>
 

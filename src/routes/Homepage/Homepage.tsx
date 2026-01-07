@@ -41,8 +41,14 @@ const metadata = (
 
 const Homepage = () => {
   const newsSection = (
-    <section id="news-section">
-      <div id="news-grid">
+    <section id="news-section" className="homepage-section">
+      <img
+        className="background-image"
+        src="https://f4.bcbits.com/img/a2242049588_10.jpg"
+        alt="Background image for the news section"
+        aria-hidden="true"
+      />
+      <div id="news-grid" className="floating-card-on-wide">
         <iframe
           width="560"
           height="315"
@@ -62,8 +68,14 @@ const Homepage = () => {
   );
 
   const socialLinks = (
-    <section id="y2nes-social-links">
-      <div className="links-container">
+    <section id="y2nes-social-links" className="homepage-section">
+      <img
+        className="background-image"
+        src="https://y2nes.com/assets/y2nes_banner.png"
+        alt="Background image for the social media links section"
+        aria-hidden="true"
+      />
+      <div className="links-container floating-card-on-wide">
         <h2>SOCIAL MEDIA</h2>
         <a
           className="link-button"
@@ -113,8 +125,14 @@ const Homepage = () => {
   );
 
   const musicLinks = (
-    <section id="y2nes-music-links">
-      <div className="links-container">
+    <section id="y2nes-music-links" className="homepage-section">
+      <img
+        className="background-image"
+        src="https://y2nes.com/assets/max_power_banner.png"
+        alt="Background image for the music links section"
+        aria-hidden="true"
+      />
+      <div className="links-container floating-card-on-wide">
         <h2>MUSIC LINKS</h2>
         <a
           className="link-button"

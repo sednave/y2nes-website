@@ -5,42 +5,37 @@ h2 {
   margin-bottom: 0.5em;
 }
 
+.background-image {
+  width: 100%;
+  height: 5rem;
+  object-fit: cover;
+  position: relative;
+}
+
+.homepage-section {
+  overflow: hidden;
+  position: relative;
+}
+
 #news-section {
   width: 100%;
-  height: 40vh;
   display: flex;
-  padding-top: 12em;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 4em;
-  background:
-    linear-gradient(
-      to right,
-      var(--background-color) 0%,
-      rgba(0, 0, 0, 0) 25%,
-      rgba(0, 0, 0, 0) 50%,
-      var(--background-color) 75%,
-      var(--background-color) 100%
-    ),
-    url("https://f4.bcbits.com/img/a2242049588_10.jpg") no-repeat;
-  background-size: 70%;
-  background-position: 0% 40%;
   text-shadow:
     0 0 10px var(--background-color),
     0 0 60px var(--background-color);
-  transition: background-size 0.5s;
-}
-
-#news-section:hover,
-#news-section:focus-within {
-  background-size: 73%;
-  transition: background-size 0.5s;
+  padding: 0;
 }
 
 #news-grid {
   display: grid;
-  grid-template: "1fr 1fr";
+  grid-template-columns: 1fr;
   gap: 8em;
+  width: min(90%, 60rem);
+  justify-items: center;
+  padding: 6rem;
+  background-color: var(--background-color);
 }
 
 #news-grid img {
@@ -50,64 +45,26 @@ h2 {
 
 #y2nes-social-links {
   width: 100%;
-  background:
-    linear-gradient(
-      to right,
-      var(--background-color) 0%,
-      rgba(0, 0, 0, 0) 25%,
-      rgba(0, 0, 0, 0) 50%,
-      var(--background-color) 75%,
-      var(--background-color) 100%
-    ),
-    url("https://y2nes.com/assets/y2nes_banner.png") no-repeat;
-  background-size: 100%;
-  background-position: -10vw 0%;
   transition: background-size 0.5s;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#y2nes-social-links:hover,
-#y2nes-social-links:focus-within {
-  background-size: 102%;
-  transition: background-size 0.5s;
 }
 
 #y2nes-music-links {
   width: 100%;
-  background:
-    linear-gradient(
-      to right,
-      var(--background-color) 0%,
-      var(--background-color) 25%,
-      rgba(0, 0, 0, 0) 75%,
-      rgba(0, 0, 0, 0) 90%,
-      var(--background-color) 100%
-    ),
-    url("https://y2nes.com/assets/max_power_banner.png") no-repeat;
-  background-size: 85%;
-  background-position: 100% 45%;
-  transition: background-size 0.5s;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#y2nes-music-links:hover,
-#y2nes-music-links:focus-within {
-  background-size: 87%;
-  transition: background-size 0.5s;
-}
-
 .links-container {
-  width: min-content;
+  width: 100%;
   display: grid;
-  grid-gap: 0.5em;
-  grid-template-columns: 30em 40em 30em;
+  grid-gap: 0.75rem;
   text-align: center;
-  padding: 6em;
+  padding: 4em 0;
+  background-color: var(--background-color);
 }
 
 .link-button {
@@ -132,12 +89,88 @@ h2 {
   transition: background-color 0.2s;
 }
 
-#y2nes-social-links h2,
-#y2nes-social-links a {
-  grid-column: 3;
+.links-container h2,
+.links-container a {
+  padding: 1rem;
+  margin: 0 3rem;
 }
 
-#y2nes-music-links h2,
-#y2nes-music-links a {
-  grid-column: 1;
+@media (min-width: 1024px) {
+  #news-section {
+    background: linear-gradient(
+      to right,
+      var(--background-color) 0%,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0) 75%,
+      var(--background-color) 100%
+    );
+  }
+
+  #news-grid {
+    margin: 12rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  #y2nes-social-links {
+    background: linear-gradient(
+      to right,
+      var(--background-color) 0%,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0) 50%,
+      var(--background-color) 75%,
+      var(--background-color) 100%
+    );
+  }
+
+  #y2nes-social-links .links-container {
+    margin-left: max(4rem, calc(50% - 20rem));
+  }
+
+  #y2nes-music-links {
+    background: linear-gradient(
+      to right,
+      var(--background-color) 0%,
+      var(--background-color) 25%,
+      rgba(0, 0, 0, 0) 75%,
+      rgba(0, 0, 0, 0) 90%,
+      var(--background-color) 100%
+    );
+  }
+
+  #y2nes-music-links .links-container {
+    margin-right: max(4rem, calc(50% - 20rem));
+  }
+
+  .background-image {
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+  }
+
+  .homepage-section img {
+    transform: scale(1) 0;
+    transition: transform 0.5s;
+  }
+
+  .homepage-section:hover img,
+  .homepage-section:focus-within img {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+  }
+
+  .links-container {
+    width: min(90%, 40rem);
+    margin: 4rem 0;
+  }
+
+  .links-container h2,
+  .links-container a {
+    padding: 0.5rem;
+  }
+
+  .floating-card-on-wide {
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px var(--primary-color);
+  }
 }

@@ -56,7 +56,9 @@ const CharacterInfoSection = ({ characterId }: Props) => {
               alt={`Portrait of ${characterInfo.name}`}
               style={{ boxShadow: glow }}
             />
-            <h2 style={{ textShadow: glow }}>{characterInfo.name}</h2>
+            <h2 className="glow-h2" style={{ textShadow: glow }}>
+              {characterInfo.name}
+            </h2>
             <RichParagraph text={characterInfo.description} />
             {referenceImage}
           </>

@@ -4,11 +4,6 @@
   height: auto;
 }
 
-#not-found-page-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 #not-found-page h1 {
   font-size: 8rem;
 }

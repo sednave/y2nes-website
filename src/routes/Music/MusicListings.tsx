@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import MusicListing from "./MusicListing";
 import MusicListingButton from "./MusicListingButton";
 
@@ -6,130 +6,104 @@ type Props = {
   listingType: string;
 };
 
+const albums = ["Break! The Scarlet Devil!", "ANTI-CULTURED"];
+const singles = [
+  "STARDUSTER",
+  "FREEFALL",
+  "STARLIGHT EYES",
+  "MAX POWER (feat. Space Bwoi)",
+  "AIN'T MOVING",
+  "CONTINUE THE BROADCAST",
+  "KNOW I'M A KING",
+  "LET IT BUBBLE UP",
+];
+const extras = ["Test Track 1"];
+
 const MusicListings = ({ listingType }: Props) => {
   const [listingId, setListingId] = useState("");
   const [row, setRow] = useState(0);
-  const GRID_COLUMNS = 4;
 
+  const [gridColumns, setGridColumns] = useState(4);
+  const gridRef = useRef<HTMLElement>(null);
   const handleMusicListingButtonClick = (listingId: string, index: number) => {
     setListingId(listingId);
-    setRow(Math.floor(index / GRID_COLUMNS) + 2);
+    setRow(Math.floor(index / gridColumns) + 2);
   };
 
   useEffect(() => {
     setListingId("");
     setRow(0);
+
+    const updateGridColumns = () => {
+      if (gridRef.current) {
+        const cols = getComputedStyle(
+          gridRef.current,
+        ).gridTemplateColumns.split(" ").length;
+        setGridColumns(cols);
+      }
+    };
+
+    updateGridColumns();
+    window.addEventListener("resize", updateGridColumns);
+    return () => window.removeEventListener("resize", updateGridColumns);
   }, [listingType]);
 
   let musicListings = <></>;
   switch (listingType) {
     case "albums":
       musicListings = (
-        <section className="music-listings">
-          <div className="music-listings-wrapper">
+        <section className="music-listings" ref={gridRef}>
+          {[...albums].reverse().map((value, index) => (
             <MusicListingButton
-              listingId="ANTI-CULTURED"
+              key={value}
+              listingId={value}
               selectedId={listingId}
               onClick={(listingId) =>
-                handleMusicListingButtonClick(listingId, 0)
+                handleMusicListingButtonClick(listingId, index)
               }
             />
-            <MusicListingButton
-              listingId="Break! The Scarlet Devil!"
-              selectedId={listingId}
-              onClick={(listingId) =>
-                handleMusicListingButtonClick(listingId, 1)
-              }
-            />
-            {listingId && (
-              <MusicListing listingId={listingId} style={{ gridRow: row }} />
-            )}
-          </div>
+          ))}
+          {listingId && (
+            <MusicListing listingId={listingId} style={{ gridRow: row }} />
+          )}
         </section>
       );
       break;
     case "singles":
       musicListings = (
-        <section className="music-listings">
-          <div className="music-listings-wrapper">
+        <section className="music-listings" ref={gridRef}>
+          {[...singles].reverse().map((value, index) => (
             <MusicListingButton
-              listingId="STARDUSTER"
+              key={value}
+              listingId={value}
               selectedId={listingId}
               onClick={(listingId) =>
-                handleMusicListingButtonClick(listingId, 0)
+                handleMusicListingButtonClick(listingId, index)
               }
             />
-            <MusicListingButton
-              listingId="FREEFALL"
-              selectedId={listingId}
-              onClick={(listingId) =>
-                handleMusicListingButtonClick(listingId, 1)
-              }
-            />
-            <MusicListingButton
-              listingId="STARLIGHT EYES"
-              selectedId={listingId}
-              onClick={(listingId) =>
-                handleMusicListingButtonClick(listingId, 2)
-              }
-            />
-            <MusicListingButton
-              listingId="MAX POWER (feat. Space Bwoi)"
-              selectedId={listingId}
-              onClick={(listingId) =>
-                handleMusicListingButtonClick(listingId, 3)
-              }
-            />
-            <MusicListingButton
-              listingId="AIN'T MOVING"
-              selectedId={listingId}
-              onClick={(listingId) =>
-                handleMusicListingButtonClick(listingId, 4)
-              }
-            />
-            <MusicListingButton
-              listingId="CONTINUE THE BROADCAST"
-              selectedId={listingId}
-              onClick={(listingId) =>
-                handleMusicListingButtonClick(listingId, 5)
-              }
-            />
-            <MusicListingButton
-              listingId="KNOW I'M A KING"
-              selectedId={listingId}
-              onClick={(listingId) =>
-                handleMusicListingButtonClick(listingId, 6)
-              }
-            />
-            <MusicListingButton
-              listingId="LET IT BUBBLE UP"
-              selectedId={listingId}
-              onClick={(listingId) =>
-                handleMusicListingButtonClick(listingId, 7)
-              }
-            />
-            {listingId && (
-              <MusicListing listingId={listingId} style={{ gridRow: row }} />
-            )}
-          </div>
+          ))}
+          {listingId && (
+            <MusicListing listingId={listingId} style={{ gridRow: row }} />
+          )}
         </section>
       );
       break;
     case "extras":
       musicListings = (
-        <section className="music-listings">
-          <div className="music-listings-wrapper">
+        <section className="music-listings" ref={gridRef}>
+          {[...extras].reverse().map((value, index) => (
             <MusicListingButton
-              listingId="Test Track 1"
+              key={value}
+              listingId={value}
               selectedId={listingId}
               onClick={(listingId) =>
-                handleMusicListingButtonClick(listingId, 0)
+                handleMusicListingButtonClick(listingId, index)
               }
             />
-            {listingId && (
-              <MusicListing listingId={listingId} style={{ gridRow: row }} />
-            )}
-          </div>
+          ))}
+          {listingId && (
+            <MusicListing listingId={listingId} style={{ gridRow: row }} />
+          )}
         </section>
       );
       break;
