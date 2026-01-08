@@ -1,9 +1,12 @@
-import AnnouncementBar from "./AnnouncementBar";
+import NavBar from "./NavBar";
+import NavBarMobile from "./NavBarMobile";
+import "./Header.css";
 
 const Header = () => {
   return (
     <header>
-      <AnnouncementBar />
+      <NavBarMobile />
+      <NavBar />
     </header>
   );
 };
