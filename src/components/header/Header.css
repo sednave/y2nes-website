@@ -16,14 +16,17 @@ header {
   gap: 1rem;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
+}
+
+header img {
+  height: 6rem;
 }
 
 .nav-bar-mobile {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 2vh 2rem;
 }
 
 .nav-bar-mobile button {
@@ -55,7 +58,7 @@ header {
   padding: 0;
   list-style: none;
   background-color: var(--background-color);
-  opacity: 0%;
+  opacity: 0;
   pointer-events: none;
   transform: translateY(10%);
   transition:
@@ -64,7 +67,7 @@ header {
 }
 
 .nav-links-open {
-  opacity: 100%;
+  opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
   transition:

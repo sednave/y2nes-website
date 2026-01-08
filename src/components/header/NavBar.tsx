@@ -1,26 +1,11 @@
 import { Link } from "react-router";
-
-interface NavLinkType {
-  name: string;
-  path: string;
-}
-const navLinks: NavLinkType[] = [
-  { name: "Home", path: "/" },
-  { name: "Characters & References", path: "/characters" },
-  { name: "Music", path: "/music" },
-  { name: "Store", path: "/store" },
-  { name: "About", path: "/about" },
-];
+import navLinks from "./NavLinks";
 
 const NavBar = () => {
   return (
     <nav className="nav-bar">
       <Link to="/">
-        <img
-          src="/assets/TextLogo.webp"
-          alt="Y2NES Logo"
-          style={{ height: "6rem" }}
-        />
+        <img src="/assets/TextLogo.webp" alt="Y2NES Logo" />
       </Link>
       <ul className="nav-bar-links">
         {navLinks.map((navLink) => (
