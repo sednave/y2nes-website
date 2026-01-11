@@ -3,7 +3,7 @@ header {
   padding: 0;
   margin-bottom: 4vh;
   position: relative;
-  height: 6rem;
+  min-height: 6rem;
   z-index: 10;
 }
 
