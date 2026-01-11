@@ -6,6 +6,12 @@ const NavBarMobile = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === "Escape" && isMenuOpen) {
         setIsMenuOpen(false);
