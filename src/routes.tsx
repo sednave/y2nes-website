@@ -5,6 +5,7 @@ import Store from "./Store";
 import Music from "./routes/Music/Music";
 import About from "./routes/About";
 import type { RouteObject } from "react-router";
+import Links from "./routes/Links";
 
 const routes: RouteObject[] = [
   {
@@ -30,6 +31,10 @@ const routes: RouteObject[] = [
   {
     path: "/store",
     element: <Store />,
+  },
+  {
+    path: "/links",
+    element: <Links />,
   },
   {
     path: "*",

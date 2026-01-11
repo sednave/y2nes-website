@@ -3,10 +3,12 @@ import Header from "../../components/header/Header";
 import Marquee from "react-fast-marquee";
 import "./Homepage.css";
 import SiteBackground from "../../components/backgrounds/SiteBackground";
+import SocialLinks from "../../components/SocialLinks";
+import MusicLinks from "../../components/MusicLinks";
 const bannerImage = "/assets/y2nes_banner.png";
 
 const metadata = (
-  <article>
+  <>
     <title>Y2NES - Homepage</title>
     <meta
       name="description"
@@ -36,7 +38,7 @@ const metadata = (
     <meta name="twitter:image" content={`https://y2nes.com${bannerImage}`} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@wivyrn" />
-  </article>
+  </>
 );
 
 const Homepage = () => {
@@ -67,117 +69,6 @@ const Homepage = () => {
     </section>
   );
 
-  const socialLinks = (
-    <section id="y2nes-social-links" className="homepage-section">
-      <img
-        className="background-image"
-        src="https://y2nes.com/assets/y2nes_banner.png"
-        alt="Background image for the social media links section"
-        aria-hidden="true"
-      />
-      <div className="links-container floating-card-on-wide">
-        <h2>SOCIAL MEDIA</h2>
-        <a
-          className="link-button"
-          href="https://www.instagram.com/its.y2nes/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          INSTAGRAM
-        </a>
-        <a
-          className="link-button"
-          href="https://x.com/wivyrn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          TWITTER / X
-        </a>
-        <a
-          className="link-button"
-          href="https://bsky.app/profile/wivyrn.bsky.social"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          BLUESKY
-        </a>
-        <a
-          className="link-button"
-          href="https://www.tiktok.com/@y.2nes"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          TIKTOK
-        </a>
-        <a
-          className="link-button"
-          href="https://discord.com/invite/28ZypjypMq"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          DISCORD SERVER
-        </a>
-        <a className="link-button" href="mailto:contact@y2nes.com">
-          EMAIL / INQUIRIES
-        </a>
-      </div>
-    </section>
-  );
-
-  const musicLinks = (
-    <section id="y2nes-music-links" className="homepage-section">
-      <img
-        className="background-image"
-        src="https://y2nes.com/assets/max_power_banner.png"
-        alt="Background image for the music links section"
-        aria-hidden="true"
-      />
-      <div className="links-container floating-card-on-wide">
-        <h2>MUSIC LINKS</h2>
-        <a
-          className="link-button"
-          href="https://open.spotify.com/artist/0j7ysZlkFVCFCYX59vb0hs"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          SPOTIFY
-        </a>
-        <a
-          className="link-button"
-          href="https://music.apple.com/us/artist/y2nes/1813450877"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          APPLE MUSIC
-        </a>
-        <a
-          className="link-button"
-          href="https://www.youtube.com/@Y2NES"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          YOUTUBE
-        </a>
-        <a
-          className="link-button"
-          href="https://y2nes.bandcamp.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          BANDCAMP
-        </a>
-        <a
-          className="link-button"
-          href="https://soundcloud.com/y2nes"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          SOUNDCLOUD
-        </a>
-      </div>
-    </section>
-  );
-
   return (
     <div className="page">
       {metadata}
@@ -185,6 +76,7 @@ const Homepage = () => {
       <Header />
 
       <main>
+        <h1>Tune in to Y2NES</h1>
         <Marquee
           autoFill={true}
           className="marquee"
@@ -211,7 +103,7 @@ const Homepage = () => {
           <p>·</p>
         </Marquee>
 
-        {socialLinks}
+        <SocialLinks />
 
         <Marquee
           autoFill={true}
@@ -225,7 +117,7 @@ const Homepage = () => {
           <p>·</p>
         </Marquee>
 
-        {musicLinks}
+        <MusicLinks />
 
         <Marquee
           autoFill={true}

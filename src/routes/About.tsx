@@ -5,7 +5,7 @@ import SiteBackground from "../components/backgrounds/SiteBackground";
 const bannerImage = "/assets/y2nes_banner.png";
 
 const metadata = (
-  <article>
+  <>
     <title>About | Y2NES</title>
     <meta name="description" content="Background information on Y2NES." />
     <meta name="keywords" content="Y2NES, Information, Info, About, EDM, Y2K" />
@@ -29,7 +29,7 @@ const metadata = (
     <meta name="twitter:image" content={`https://y2nes.com${bannerImage}`} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@wivyrn" />
-  </article>
+  </>
 );
 
 const About = () => {
