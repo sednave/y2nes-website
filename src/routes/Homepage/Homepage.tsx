@@ -8,7 +8,7 @@ import MusicLinks from "../../components/MusicLinks";
 const bannerImage = "/assets/y2nes_banner.png";
 
 const metadata = (
-  <article>
+  <>
     <title>Y2NES - Homepage</title>
     <meta
       name="description"
@@ -38,7 +38,7 @@ const metadata = (
     <meta name="twitter:image" content={`https://y2nes.com${bannerImage}`} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@wivyrn" />
-  </article>
+  </>
 );
 
 const Homepage = () => {
@@ -76,6 +76,7 @@ const Homepage = () => {
       <Header />
 
       <main>
+        <h1>Tune in to Y2NES</h1>
         <Marquee
           autoFill={true}
           className="marquee"

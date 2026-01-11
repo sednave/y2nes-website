@@ -22,10 +22,11 @@ const NavBarMobile = () => {
         <img src="/assets/TextLogo.webp" alt="Y2NES Logo" />
       </Link>
       <ul
+        id="nav-bar-links-mobile"
         className={`nav-bar-links-mobile ${isMenuOpen ? "nav-links-open" : ""}`}
       >
         {navLinks.map((navLink) => (
-          <li key={navLink.name}>
+          <li key={navLink.path}>
             <Link to={navLink.path} onClick={() => setIsMenuOpen(false)}>
               {navLink.name}
             </Link>
@@ -37,6 +38,7 @@ const NavBarMobile = () => {
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle navigation menu"
         aria-expanded={isMenuOpen}
+        aria-controls="nav-bar-links-mobile"
       >
         {isMenuOpen ? "X" : "☰"}
       </button>

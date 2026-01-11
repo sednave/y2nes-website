@@ -34,6 +34,14 @@ header img {
   border: none;
   width: 6rem;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.nav-bar-mobile button:focus-visible,
+.nav-bar-links a:focus-visible,
+.nav-bar-links-mobile a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
 }
 
 .nav-bar-links {

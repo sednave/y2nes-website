@@ -10,7 +10,7 @@ const metadataTitle = "Links | Y2NES";
 const metadataDescription =
   "Links to Y2NES's official accounts on other platforms";
 const metadata = (
-  <article>
+  <>
     <title>{metadataTitle}</title>
     <meta name="description" content={metadataDescription} />
     <meta
@@ -31,7 +31,7 @@ const metadata = (
     <meta name="twitter:image" content={`https://y2nes.com${bannerImage}`} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@wivyrn" />
-  </article>
+  </>
 );
 
 const Links = () => {
@@ -42,6 +42,8 @@ const Links = () => {
       <Header />
 
       <main>
+        <h1>Links</h1>
+
         <Marquee
           autoFill={true}
           className="marquee"
