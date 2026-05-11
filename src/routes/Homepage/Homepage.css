@@ -17,6 +17,16 @@ h2 {
   position: relative;
 }
 
+#news-panel {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
 #news-section {
   width: 100%;
   display: flex;
@@ -107,7 +117,7 @@ h2 {
   }
 
   #news-grid {
-    margin: 12rem;
+    margin: 0 12rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 

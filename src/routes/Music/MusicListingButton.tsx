@@ -17,6 +17,10 @@ const MusicListingButton = ({ listingId, selectedId, onClick }: Props) => {
     "CONTINUE THE BROADCAST": "https://f4.bcbits.com/img/a2414336345_10.jpg",
     "KNOW I'M A KING": "https://f4.bcbits.com/img/a1218000490_10.jpg",
     "LET IT BUBBLE UP": "https://f4.bcbits.com/img/a4079986900_10.jpg",
+    "FIRE TONIGHT": "https://f4.bcbits.com/img/a1186889423_2.jpg",
+    "DON'T LOOK DOWN": "https://f4.bcbits.com/img/a0149752669_2.jpg",
+    "TIME IN THE SUN": "https://f4.bcbits.com/img/a2778884829_2.jpg",
+    "BACK TO BASICS": "https://f4.bcbits.com/img/a1783458880_2.jpg",
     "Test Track 1": "https://y2nes.com/assets/test_track_1.png",
   };
 
