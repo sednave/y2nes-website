@@ -70,12 +70,8 @@ const MusicListing = ({ listingId, style }: Props) => {
     case "Adventure Angels":
       inner = (
         <>
-          <iframe 
-            className="bandcamp-player"
-            src="https://bandcamp.com/EmbeddedPlayer/album=739024435/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless>
-            <a href="https://y2nes.bandcamp.com/album/anti-cultured">Adventure Angels by Y2NES</a>
-          </iframe>
           <h2>Adventure Angels</h2>
+          <h3>COMING SOON!</h3>
           <p>
             Ever since she was a kid, Alisa has always dreamt of being whisked away to a fantasy kingdom to live as a princess.
           </p>
