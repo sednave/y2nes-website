@@ -67,6 +67,27 @@ const MusicListing = ({ listingId, style }: Props) => {
         </>
       );
       break;
+    case "Adventure Angels":
+      inner = (
+        <>
+          <iframe 
+            className="bandcamp-player"
+            src="https://bandcamp.com/EmbeddedPlayer/album=739024435/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless>
+            <a href="https://y2nes.bandcamp.com/album/anti-cultured">Adventure Angels by Y2NES</a>
+          </iframe>
+          <h2>Adventure Angels</h2>
+          <p>
+            Ever since she was a kid, Alisa has always dreamt of being whisked away to a fantasy kingdom to live as a princess.
+          </p>
+          <p>
+            Well after a series of unfortunate events, she became a demon and was summoned to another world in order to help out a struggling newbie adventurer.
+          </p>
+          <p>
+            Life as an adventurer isn't as easy as living high, but Alisa is determined to make the most out of her second chance at life.
+          </p>
+        </>
+      );
+      break;
     case "STARDUSTER":
       inner = (
         <>
@@ -332,7 +353,7 @@ const MusicListing = ({ listingId, style }: Props) => {
             seamless
           >
             <a href="https://y2nes.bandcamp.com/album/back-to-basics">
-              TBACK TO BASICS by Y2NES
+              BACK TO BASICS by Y2NES
             </a>
           </iframe>
           <h2>BACK TO BASICS</h2>
@@ -344,6 +365,48 @@ const MusicListing = ({ listingId, style }: Props) => {
         </>
       );
       break;
+    case "PLEASURE ADVENTURE!":
+      <>
+        <iframe 
+          title="PLEASURE ADVENTURE!" 
+          className="bandcamp-player"
+          src="https://bandcamp.com/EmbeddedPlayer/track=3117131242/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+          seamless
+        >
+          <a href="https://y2nes.bandcamp.com/track/pleasure-adventure-2">PLEASURE ADVENTURE! by Y2NES</a>
+        </iframe>
+        <h2>PLEASURE ADVENTURE!</h2>
+        <p>
+          Alisa never considered herself a fighter, but in this new world, she doesn't have much of a choice. What's surprising to her isn't that she's scared of monsters... it's that she's scared she might actually enjoy living on the edge.
+        </p>
+      </>
+    );
+      break;
+    case "WONDERLAND":
+      <>
+        <iframe
+          title="WONDERLAND"
+          className="bandcamp-player"
+          src="https://bandcamp.com/EmbeddedPlayer/track=2681740964/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" 
+          seamless
+        >
+          <a href="https://y2nes.bandcamp.com/track/wonderland-2"/>
+        </iframe>
+        <h2>WONDERLAND</h2>
+        <p>
+          Leta never quite enjoyed living as the perfect royal dragon princess her parents wanted her to be. She grew quite bored of living in a dark damp cave surrounded by looted treasure and luxuries.
+        </p>
+        <p>
+          One day, she just left to become an adventurer without saying goodbye. Donning a human disguise and no money to her name, Leta was determined to forge her own life from scratch.
+        </p>
+        <p>
+          "This world is beautiful," she thought. "It's just like Wonderland!"
+        </p>
+        <p>
+          Leta was now the protagonist of her own story.
+        </p>
+      </>
+    );
     case "Test Track 1":
       inner = (
         <>
