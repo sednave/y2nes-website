@@ -5,6 +5,7 @@ import "./Homepage.css";
 import SiteBackground from "../../components/backgrounds/SiteBackground";
 import SocialLinks from "../../components/SocialLinks";
 import MusicLinks from "../../components/MusicLinks";
+import News from "./News";
 const bannerImage = "/assets/y2nes_banner.png";
 
 const metadata = (
@@ -42,32 +43,7 @@ const metadata = (
 );
 
 const Homepage = () => {
-  const newsSection = (
-    <section id="news-section" className="homepage-section">
-      <img
-        className="background-image"
-        src="https://f4.bcbits.com/img/a2242049588_10.jpg"
-        alt="Background image for the news section"
-        aria-hidden="true"
-      />
-      <div id="news-grid" className="floating-card-on-wide">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/o7Er2Xo82aU?si=X9y4xYL2a0HcAI61"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-        <div>
-          <h2>News</h2>
-          <h3>New album "ANTI-CULTURED" is coming soon!</h3>
-          <p>Subscribe to my Youtube channel for more updates</p>
-        </div>
-      </div>
-    </section>
-  );
+  
 
   return (
     <div className="page">
@@ -89,7 +65,7 @@ const Homepage = () => {
           <p>·</p>
         </Marquee>
 
-        {newsSection}
+        <News />
 
         <Marquee
           autoFill={true}

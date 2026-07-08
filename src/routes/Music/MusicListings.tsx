@@ -6,7 +6,7 @@ type Props = {
   listingType: string;
 };
 
-const albums = ["Break! The Scarlet Devil!", "ANTI-CULTURED"];
+const albums = ["Break! The Scarlet Devil!", "ANTI-CULTURED", "Adventure Angels"];
 const singles = [
   "STARDUSTER",
   "FREEFALL",
@@ -16,8 +16,14 @@ const singles = [
   "CONTINUE THE BROADCAST",
   "KNOW I'M A KING",
   "LET IT BUBBLE UP",
+  "FIRE TONIGHT",
+  "DON'T LOOK DOWN",
+  "TIME IN THE SUN",
+  "BACK TO BASICS",
+  "PLEASURE ADVENTURE!",
+  "WONDERLAND"
 ];
-const extras = ["Test Track 1"];
+const extras = ["Test Track 1", "BACK TO BASICS (Nightcore)"];
 
 const MusicListings = ({ listingType }: Props) => {
   const [listingId, setListingId] = useState("");

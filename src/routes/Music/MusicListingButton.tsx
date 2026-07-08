@@ -8,6 +8,7 @@ const MusicListingButton = ({ listingId, selectedId, onClick }: Props) => {
   const LISTING_IMAGES: Record<string, string> = {
     "ANTI-CULTURED": "https://f4.bcbits.com/img/a2242049588_10.jpg",
     "Break! The Scarlet Devil!": "https://f4.bcbits.com/img/a2922520444_16.jpg",
+    "Adventure Angels": "https://f4.bcbits.com/img/a2922520444_16.jpg",
     STARDUSTER: "https://f4.bcbits.com/img/a1426170319_10.jpg",
     FREEFALL: "https://f4.bcbits.com/img/a4061308070_10.jpg",
     "STARLIGHT EYES": "https://f4.bcbits.com/img/a1010331177_10.jpg",
@@ -17,6 +18,12 @@ const MusicListingButton = ({ listingId, selectedId, onClick }: Props) => {
     "CONTINUE THE BROADCAST": "https://f4.bcbits.com/img/a2414336345_10.jpg",
     "KNOW I'M A KING": "https://f4.bcbits.com/img/a1218000490_10.jpg",
     "LET IT BUBBLE UP": "https://f4.bcbits.com/img/a4079986900_10.jpg",
+    "FIRE TONIGHT": "https://f4.bcbits.com/img/a1186889423_2.jpg",
+    "DON'T LOOK DOWN": "https://f4.bcbits.com/img/a0149752669_2.jpg",
+    "TIME IN THE SUN": "https://f4.bcbits.com/img/a2778884829_2.jpg",
+    "BACK TO BASICS": "https://f4.bcbits.com/img/a1783458880_2.jpg",
+    "PLEASURE ADVENTURE!": "https://f4.bcbits.com/img/a2241244086_10.jpg",
+    "WONDERLAND": "https://f4.bcbits.com/img/a3582694338_10.jpg",
     "Test Track 1": "https://y2nes.com/assets/test_track_1.png",
   };
 

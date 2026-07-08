@@ -24,17 +24,11 @@ const MusicListing = ({ listingId, style }: Props) => {
     case "ANTI-CULTURED":
       inner = (
         <>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/o7Er2Xo82aU?si=sQSKERLiqmjSqyNj"
-            title="ANTI-CULTURED Teaser"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-            style={{ float: "left", marginRight: "2em" }}
-          ></iframe>
+          <iframe 
+            className="bandcamp-player"
+            src="https://bandcamp.com/EmbeddedPlayer/album=739024435/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless>
+            <a href="https://y2nes.bandcamp.com/album/anti-cultured">ANTI-CULTURED by Y2NES</a>
+          </iframe>
           <h2>ANTI-CULTURED</h2>
           <p>
             The rich and powerful are stealing magic from the world, and many
@@ -52,7 +46,6 @@ const MusicListing = ({ listingId, style }: Props) => {
             bass lines and hard breakbeats to give you the energy to fight
             against an unjust system.
           </p>
-          <strong>COMING SOON!</strong>
         </>
       );
       break;
@@ -71,6 +64,27 @@ const MusicListing = ({ listingId, style }: Props) => {
           </iframe>
           <h2>Break! The Scarlet Devil!</h2>
           <p>A remix compilation of Touhou 6.</p>
+        </>
+      );
+      break;
+    case "Adventure Angels":
+      inner = (
+        <>
+          <iframe 
+            className="bandcamp-player"
+            src="https://bandcamp.com/EmbeddedPlayer/album=739024435/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless>
+            <a href="https://y2nes.bandcamp.com/album/anti-cultured">Adventure Angels by Y2NES</a>
+          </iframe>
+          <h2>Adventure Angels</h2>
+          <p>
+            Ever since she was a kid, Alisa has always dreamt of being whisked away to a fantasy kingdom to live as a princess.
+          </p>
+          <p>
+            Well after a series of unfortunate events, she became a demon and was summoned to another world in order to help out a struggling newbie adventurer.
+          </p>
+          <p>
+            Life as an adventurer isn't as easy as living high, but Alisa is determined to make the most out of her second chance at life.
+          </p>
         </>
       );
       break;
@@ -264,6 +278,135 @@ const MusicListing = ({ listingId, style }: Props) => {
         </>
       );
       break;
+    case "FIRE TONIGHT":
+      inner = (
+        <>
+          <iframe
+            title="FIRE TONIGHT"
+            className="bandcamp-player"
+            src="https://bandcamp.com/EmbeddedPlayer/album=4110569750/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+            seamless
+          >
+            <a href="https://y2nes.bandcamp.com/album/fire-tonight">
+              FIRE TONIGHT by Y2NES
+            </a>
+          </iframe>
+          <h2>FIRE TONIGHT</h2>
+          <p>
+            Sometimes adventurers encounter tough monsters. Very tough. So tough that no amount of strategizing can do anything to break through their armor. On this night, Berry encountered one of those said monsters. Despite preferring to keep herself clean, she has no problem equipping weapons of her own and taking matters into her own hands.
+          </p>
+        </>
+      );
+      break;
+    case "DON'T LOOK DOWN":
+      inner = (
+        <>
+          <iframe
+            title="DON'T LOOK DOWN"
+            className="bandcamp-player"
+            src="https://bandcamp.com/EmbeddedPlayer/album=4209101264/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+            seamless
+          >
+            <a href="https://y2nes.bandcamp.com/album/dont-look-down">
+              DON'T LOOK DOWN by Y2NES
+            </a>
+          </iframe>
+          <h2>DON'T LOOK DOWN</h2>
+          <p>
+            "If you're gonna self express yourself on the government's property, you need to know which direction to run away in." - Basil
+          </p>
+        </>
+      );
+      break;
+    case "TIME IN THE SUN":
+      inner = (
+        <>
+          <iframe
+            title="TIME IN THE SUN"
+            className="bandcamp-player"
+            src="https://bandcamp.com/EmbeddedPlayer/track=3625804686/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+            seamless
+          >
+            <a href="https://y2nes.bandcamp.com/track/time-in-the-sun">
+              TIME IN THE SUN by Y2NES
+            </a>
+          </iframe>
+          <h2>TIME IN THE SUN</h2>
+          <p>
+            Leta is a dragon princess. One of the few left in the world after most of her kind was wiped out following an endless war with so called lesser races. Seeing the writing on the wall, she abandoned her old station to assimilate with and coexist peacefully with other human.
+
+            She doesn't quite know how the world works and how the human mind works, which has led to some problems regarding basic living expenses, but hey, it's the thought that counts.
+
+            When the old ways aren't working, why not try something radical?
+          </p>
+        </>
+      );
+      break;
+
+    case "BACK TO BASICS":
+      inner = (
+        <>
+          <iframe
+            title="BACK TO BASICS"
+            className="bandcamp-player"
+            src="https://bandcamp.com/EmbeddedPlayer/album=4059105936/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+            seamless
+          >
+            <a href="https://y2nes.bandcamp.com/album/back-to-basics">
+              BACK TO BASICS by Y2NES
+            </a>
+          </iframe>
+          <h2>BACK TO BASICS</h2>
+          <p>
+            Modern life, with all of its conveniences and technology, is overwhelming. Sometimes, you just need to take a step back and enjoy the little things in life to realize how lucky you have it.
+
+            Unfortunately for Alisa, Serina, Erica, and Leta, they literally can't afford to do that, as rent is due last day of the month and they've burned through all of their savings. So, off to the dungeon for them.
+          </p>
+        </>
+      );
+      break;
+    case "PLEASURE ADVENTURE!":
+      <>
+        <iframe 
+          title="PLEASURE ADVENTURE!" 
+          className="bandcamp-player"
+          src="https://bandcamp.com/EmbeddedPlayer/track=3117131242/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+          seamless
+        >
+          <a href="https://y2nes.bandcamp.com/track/pleasure-adventure-2">PLEASURE ADVENTURE! by Y2NES</a>
+        </iframe>
+        <h2>PLEASURE ADVENTURE!</h2>
+        <p>
+          Alisa never considered herself a fighter, but in this new world, she doesn't have much of a choice. What's surprising to her isn't that she's scared of monsters... it's that she's scared she might actually enjoy living on the edge.
+        </p>
+      </>
+    );
+      break;
+    case "WONDERLAND":
+      <>
+        <iframe
+          title="WONDERLAND"
+          className="bandcamp-player"
+          src="https://bandcamp.com/EmbeddedPlayer/track=2681740964/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" 
+          seamless
+        >
+          <a href="https://y2nes.bandcamp.com/track/wonderland-2"/>
+        </iframe>
+        <h2>WONDERLAND</h2>
+        <p>
+          Leta never quite enjoyed living as the perfect royal dragon princess her parents wanted her to be. She grew quite bored of living in a dark damp cave surrounded by looted treasure and luxuries.
+        </p>
+        <p>
+          One day, she just left to become an adventurer without saying goodbye. Donning a human disguise and no money to her name, Leta was determined to forge her own life from scratch.
+        </p>
+        <p>
+          "This world is beautiful," she thought. "It's just like Wonderland!"
+        </p>
+        <p>
+          Leta was now the protagonist of her own story.
+        </p>
+      </>
+    );
     case "Test Track 1":
       inner = (
         <>
