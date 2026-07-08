@@ -366,7 +366,7 @@ const MusicListing = ({ listingId, style }: Props) => {
       );
       break;
     case "PLEASURE ADVENTURE!":
-      <>
+      inner = <>
         <iframe 
           title="PLEASURE ADVENTURE!" 
           className="bandcamp-player"
@@ -383,7 +383,7 @@ const MusicListing = ({ listingId, style }: Props) => {
     );
       break;
     case "WONDERLAND":
-      <>
+      inner = <>
         <iframe
           title="WONDERLAND"
           className="bandcamp-player"
