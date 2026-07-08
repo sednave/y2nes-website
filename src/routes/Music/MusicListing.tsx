@@ -409,6 +409,7 @@ const MusicListing = ({ listingId, style }: Props) => {
           </p>
         </>
       );
+      break;
     case "Test Track 1":
       inner = (
         <>
